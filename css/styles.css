@@ -1,0 +1,222 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+body {
+background-color: silver;
+font-family: "Lato", sans-serif;
+font-weight: 400;
+text-align: left;
+line-height: 2em;
+color: #000;		
+}
+	
+.background {
+background: url("../images/bgblur.jpg") no-repeat center center;
+background-size: 100%; background-size: cover;
+background-attachment: fixed;
+height: 850px; height: 53.125rem;
+margin: 0; 	
+}
+
+.twocol, .eightcol, .twelvecol {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#logo h1 a {
+display: block;
+float: left;
+position: absolute;
+top: 35px; top: 2.1875rem;
+text-indent: -9999px;
+background: url("../images/logo.png") no-repeat;
+width: 32px;
+height: 26px;
+}
+
+#logo h1 a:hover {
+background: url("../images/logo.png") no-repeat;
+opacity: .5;
+}
+
+.title,
+.error {
+display: table-cell;
+vertical-align: middle;
+width: 1140px;
+height: 710px; height: 45.375rem;
+font-family: "Arial", Lato, sans-serif;
+font-size: 11em;
+line-height: .9em;
+letter-spacing: .05em;
+text-transform: uppercase;
+text-align: center;
+color: rgba(0,0,0,0.2);
+}
+
+nav {
+width: 100%;
+text-align: center;
+}
+	nav ul {
+	display: inline-block;
+	line-height: -20;
+	vertical-align: center;
+	}
+		nav ul li {
+		list-style: none;
+		float: right;
+		margin: 30px 30px 50px; margin: 1.875rem 1.875rem 3.125rem;
+		font-family: "Lato", Arial, sans-serif;
+		font-size: .8125em;
+		font-weight: 400;
+		text-transform: uppercase;
+		}
+			nav ul li a,
+			nav ul li a:hover,
+			nav ul li a:visited {
+			color: #000;
+			text-decoration: none;
+			}
+			nav ul li a:hover {
+			opacity: .5;
+			}
+
+
+h2 {
+margin-bottom: 30px; margin-bottom: 1.875rem;
+font-family: "Arial", Lato, sans-serif;
+font-size: 3.25em;
+font-weight: normal;
+line-height: 1.2em;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+a:hover{
+	color: #bebebe;
+}
+
+.who {
+background: #fff url("../images/noisy_grid.png") repeat center;
+background-position-y: 39px;
+background-position-y: 2.4375rem;
+}
+
+	.who .row {
+	padding: 80px 0 80px 0;	padding: 5rem 0 5rem 0;
+	text-align: center;
+	}
+	
+	.who .eightcol {
+	font-family: "Merriweather", Lato, serif;
+	font-size: 1.2em;
+	line-height: 2em;
+	font-weight: 300;
+	}
+	
+	.who h2 {
+	color: #bebebe;
+	}
+
+/* ============================= */
+/* ! Layout for tablet version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 1025px) {
+
+.background{
+background: #999 url("../images/bgtabmobblur.jpg") no-repeat center center;
+background-attachment: scroll;
+height: 650px; height: 40.625rem;
+margin: 0; 
+}
+
+.title,
+.error {
+font-size: 9em;
+height: 550px; height: 34.375rem;
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 768px) {
+
+#eightcol a {
+	text-decoration: none;
+	color: #000;
+}
+#eightcol a:hover{
+	color:#fff;
+}
+
+h2 {
+font-size: 2.5em;
+}
+
+.button_primary a {
+width: inherit;
+}
+	
+.backgrond {
+background: #999 url("../images/bgtabmobblur.jpg") no-repeat center center;
+height: 440px; height: 27.5rem;
+margin: 0; 	 	
+}
+
+#logo h1 a {
+display: block;
+float: left;
+position: absolute;
+top: 25px;
+left: 20px;
+background: url("../images/log.png") no-repeat;
+background-size: 50%;
+margin: 0 auto 0 auto;
+}
+
+nav ul li {
+font-size: .625em;
+margin: 15px;
+}
+
+.title,
+.error {
+height: 360px; height: 22.5rem;
+font-size: 4em;
+line-height: 1em;
+/* text-align: left; */
+}
+
+.who {
+background-position: left;
+background-position-x: -42px;
+background-position-y: 39px;
+}
+
+	.who .row {
+	padding: 50px 0 50px 0;
+/* 	text-align: left; */
+	}
+		
+	.who p {
+	padding: 0;
+	font-size: .75em;
+	}
+
+p.metadata {
+/* text-align: left; */
+margin-bottom: 20px; margin-bottom: 1.25rem;
+}
+	
+	
+}
+

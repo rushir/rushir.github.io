@@ -1,2 +1,4 @@
-rushir.github.io
-================
+rushir.co
+=========
+
+Website, rushir.co
