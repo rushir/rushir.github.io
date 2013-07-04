@@ -39,7 +39,7 @@ width: 1140px;
 height: 710px; height: 45.375rem;
 font-family: "Arial", Lato, sans-serif;
 font-size: 11em;
-line-height: .9em;
+line-height: 4.5em;
 letter-spacing: .05em;
 text-transform: uppercase;
 text-align: center;
@@ -52,7 +52,7 @@ text-align: center;
 }
 	nav ul {
 	display: inline-block;
-	line-height: -20;
+	line-height: -40;
 	vertical-align: center;
 	}
 		nav ul li {
