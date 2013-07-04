@@ -15,7 +15,7 @@ color: #000;
 background: url("../images/bgblur.jpg") no-repeat center center;
 background-size: 100%; background-size: cover;
 background-attachment: fixed;
-height: 850px; height: 53.125rem;
+height: 750px; height: 53.125rem;
 margin: 0; 	
 }
 
@@ -31,8 +31,8 @@ margin-top: 0;
 margin-bottom: 0;
 }
 
-.title,
-.error {
+.title {
+position: fixed;
 display: table-cell;
 vertical-align: middle;
 width: 1140px;
@@ -44,12 +44,9 @@ letter-spacing: .05em;
 text-transform: uppercase;
 text-align: center;
 color: rgba(0,0,0,0.2);
-margin: 0;
 }
 
 nav {
-position: fixed;
-background-attachment: fixed;
 width: 100%;
 text-align: center;
 }
