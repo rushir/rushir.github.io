@@ -100,7 +100,7 @@ a:hover{
 }
 
 .who {
-background: #fff url("../images/noisy_grid.png") repeat center;
+background-color: #fff;
 background-position-y: 39px;
 background-position-y: 2.4375rem;
 }
