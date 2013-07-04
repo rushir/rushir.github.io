@@ -10,7 +10,7 @@ text-align: left;
 line-height: 2em;
 color: #000;		
 }
-	
+
 .background {
 background: url("../images/bgblur.jpg") no-repeat center center;
 background-size: 100%; background-size: cover;
@@ -19,25 +19,16 @@ height: 850px; height: 53.125rem;
 margin: 0; 	
 }
 
+#hero {
+  width:100%;
+  top:0;
+  height:850px;
+  z-index:-2;
+}
+
 .twocol, .eightcol, .twelvecol {
 margin-top: 0;
 margin-bottom: 0;
-}
-
-#logo h1 a {
-display: block;
-float: left;
-position: absolute;
-top: 35px; top: 2.1875rem;
-text-indent: -9999px;
-background: url("../images/logo.png") no-repeat;
-width: 32px;
-height: 26px;
-}
-
-#logo h1 a:hover {
-background: url("../images/logo.png") no-repeat;
-opacity: .5;
 }
 
 .title,
@@ -53,9 +44,12 @@ letter-spacing: .05em;
 text-transform: uppercase;
 text-align: center;
 color: rgba(0,0,0,0.2);
+margin: 0;
 }
 
 nav {
+position: fixed;
+background-attachment: fixed;
 width: 100%;
 text-align: center;
 }
