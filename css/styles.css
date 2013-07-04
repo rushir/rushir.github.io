@@ -47,12 +47,17 @@ color: rgba(0,0,0,0.2);
 }
 
 nav {
-width: 100%;
+position:fixed;
+margin-top: 450px;// Or what ever value you want                                                                                                                                                                              
+width: 100%;                                                                                         
 text-align: center;
+vertical-align: center;                                                                                  
+left:0;                                                                                              
+top:0; 
 }
 	nav ul {
 	display: inline-block;
-	line-height: -40;
+	line-height: -20;
 	vertical-align: center;
 	}
 		nav ul li {
