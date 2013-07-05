@@ -42,26 +42,27 @@ color: rgba(0,0,0,0.2);
 
 nav {
 position:fixed;
-margin-top: 450px;// Or what ever value you want                                                                                                                                                                              
-width: 100%;                                                                                         
-text-align: center;
-vertical-align: center;                                                                                  
-left:0;                                                                                              
-top:0; 
+margin-top: 450px;
+width:100%;
+left:0;
+top:0 
 }
 	nav ul {
-	display: inline-block;
-	line-height: -20;
-	vertical-align: center;
+    display: block;
+    line-height: -20;
+    vertical-align: center;
+    width: inherit; 
+    text-align: center;
 	}
 		nav ul li {
-		list-style: none;
-		float: right;
-		margin: 30px 30px 50px; margin: 1.875rem 1.875rem 3.125rem;
-		font-family: "Lato", Arial, sans-serif;
-		font-size: .8125em;
-		font-weight: 400;
-		text-transform: uppercase;
+        list-style: none;
+        margin: 30px 30px 50px; 
+        margin: 1.875rem 1.875rem 3.125rem;
+        font-family: "Lato", Arial, sans-serif;
+        font-size: .8125em;
+        font-weight: 400;
+        text-transform: uppercase;
+        display:inline-block; 
 		}
 			nav ul li a,
 			nav ul li a:hover,
