@@ -19,19 +19,13 @@ height: 750px; height: 53.125rem;
 margin: 0; 	
 }
 
-#hero {
-  width:100%;
-  top:0;
-  height:850px;
-  z-index:-2;
-}
-
 .twocol, .eightcol, .twelvecol {
 margin-top: 0;
 margin-bottom: 0;
 }
 
 .title {
+z-index: 0;
 position: fixed;
 display: table-cell;
 vertical-align: middle;
@@ -100,6 +94,8 @@ a:hover{
 }
 
 .who {
+position: relative;
+z-index: 1;
 background-color: #fff;
 background-position-y: 39px;
 background-position-y: 2.4375rem;
