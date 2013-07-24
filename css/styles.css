@@ -8,7 +8,7 @@ font-family: "Lato", sans-serif;
 font-weight: 400;
 text-align: left;
 line-height: 2em;
-color: #fff;		
+color: #000;		
 }
 
 .background {
@@ -97,7 +97,7 @@ a:hover{
 .who {
 position: relative;
 z-index: 1;
-background-color: #1c1f23;
+background-color: #fff;
 background-position-y: 39px;
 background-position-y: 2.4375rem;
 }
