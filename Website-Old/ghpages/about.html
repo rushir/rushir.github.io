@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Rushir - About</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/type.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script  type='text/javascript'>
+	jQuery(function(){
+     $(".img-swap").hover(
+          function(){this.src = this.src.replace("_off","_on");},
+          function(){this.src = this.src.replace("_on","_off");
+     });
+	});
+ 	</script>
+ </head>
+ <body>
+ <a id="back" href="index.html"><img class="img-swap" width="60px" style="padding-right: 10px;" src="img/home_off.png"/></a>
+ <div id="landing" style="clear: both;">
+ <h3>Hey there!</h3>
+ <table id="abouttable" width="80%">
+ <tr valign="top">
+ <td id="quote">
+ <p>"The only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."</p>
+ <p align="right">-Steve Jobs</p>
+ <p>This is my <span id="passion">passion.</span></p>
+ </td>
+ <td id="about">
+ <p>I'm a 15 year old kid who loves technology and design. I am a firm believer in the statement "The web is what you make of it". I started getting into design about two years ago, when I had the chance to work with Aza Raskin (formerly of Massive Health), now of Jawbone. Since then I've had the oppurtunity to work alongside the team at Teens in Tech as their design intern.</p>
+ <br />
+ <br />
+ <p>
+ </td>
+ </tr>
+ </table>
+ </div>
+ </body>
+</html>

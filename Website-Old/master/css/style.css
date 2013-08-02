@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #f0f0f0;
+}
+
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url("../type/ostrich-regular-webfont.eot");
+  src: local(""),
+	url("../type/ostrich-regular-webfont.woff") format("woff"),
+	url("../type/ostrich-regular-webfont.otf") format("opentype"),
+	url("../type/ostrich-regular-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Light";
+  src: url("../type/ostrich-light-webfont.eot");
+  src: local(""),
+	url("../type/ostrich-light-webfont.woff") format("woff"),
+	url("../type/ostrich-light-webfont.otf") format("opentype"),
+	url("../type/ostrich-light-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Round";
+  src: url("../type/ostrich-rounded-webfont.eot");
+  src: local(""),
+	url("../type/ostrich-rounded-webfont.woff") format("woff"),
+	url("../type/ostrich-rounded-webfont.otf") format("opentype"),
+	url("../type/ostrich-rounded-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Bold";
+  src: url("../type/ostrich-bold-webfont.eot");
+  src: local(""),
+	url("../type/ostrich-bold-webfont.woff") format("woff"),
+	url("../type/ostrich-bold-webfont.otf") format("opentype"),
+	url("../type/ostrich-bold-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Ostrich Sans Black";
+  src: url("../type/ostrich-black-webfont.eot");
+  src: local(""),
+	url("../type/ostrich-black-webfont.woff") format("woff"),
+	url("../type/ostrich-black-webfont.otf") format("opentype"),
+	url("../type/ostrich-black-webfont.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Brandon RE";
+  src: url("../type/brandon_re.ttf");
+  src: local(""),
+    url("../type/brandon_re.otf") format("opentype");
+}
+
+.circle {
+}
+
+#landing img {
+    max-width: 65%;
+    max-height: 65%;
+    position: absolute;
+    top: 0; left: 1; right: 0; bottom: 0;
+    margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 15%;
+}
+
+#landing a {
+	font-size: 50px;
+	font-family: "Ostrich Sans Black";
+	text-decoration:none;
+	color: #000000;
+}
+
+#landing a:hover {
+	font-family: "Ostrich Sans Bold";
+	text-decoration:none;
+}
+
+#aboutlink {
+	width: 150px;
+    height: 0px;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: auto;
+    margin-bottom: auto;
+	margin-left: 10%;
+}
+
+#worklink {
+	width: 150px;
+    height: 0px;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: auto;
+    margin-bottom: auto;
+	margin-left: 30%;
+}
+
+#bloglink {
+	width: 150px;
+    height: 0px;
+	position: absolute;
+    top:0;
+    bottom: 0;
+	right: 0;
+	left: 0;
+	margin-top: auto;
+    margin-bottom: auto;
+	margin-left: 20%;
+}
