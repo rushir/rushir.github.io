@@ -12,7 +12,7 @@ color: #000;
 }
 
 .background {
-background: url("../images/bgblur.jpg") no-repeat center center;
+background: url("../images/bgblurred.jpg") no-repeat center center; 
 background-size: 100%; background-size: cover;
 background-attachment: fixed;
 height: 750px; height: 53.125rem;

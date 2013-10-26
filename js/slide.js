@@ -5,12 +5,10 @@ var messages = [
   	'Designer',
   	'Maker',
 	'Student',
-	'() user',
+	'16',
 	'India',
 	'Thinker',
-	'Photo-er',
   	'Writer',
-  	'16',
 	'Doer',
 ];
 
