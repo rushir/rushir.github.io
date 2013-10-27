@@ -4,7 +4,8 @@
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
   }
 
 .flip-container, .front, .back {
@@ -36,5 +37,6 @@
 
 /* back, initially hidden pane */
 .back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
