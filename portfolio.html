@@ -1,52 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
  <head>
-    <meta charset="utf-8">
-    <title>Rushir - Photography</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="portfolio/css/style.css">
-    <link rel="stylesheet" href="portfolio/css/type.css">
-    <link rel="stylesheet" href="portfolio/css/bootstrap.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script src="portfolio/js/bootstrap.min.js"></script>
-    <script  type='text/javascript'>
-	jQuery(function(){
-     $(".img-swap").hover(
-          function(){this.src = this.src.replace("_off","_on");},
-          function(){this.src = this.src.replace("_on","_off");
-     });
-	});
- 	</script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css" type="text/css" media="screen" />
  </head>
  <body>
- <a id="back" href="index.html"><img class="img-swap" width="60px" style="padding-right: 10px;" src="img/home_off.png"/></a>
- <table width="75%" id="showcase" cellpadding="10">
- <tr>
- <td id="card" align="center">
- <a href="media/photo1full.jpg" >
- <img src="media/photo1.jpg" />
- </a>
- </td>
- <td id="card" align="center">
- <img src="media/tall-placeholder.png" />
- </td>
- <td id="card" align="center">
- <img src="media/tall-placeholder.png" />
- </td>
- </tr>
- <tr>
- <td id="card" align="center">
- <img src="media/tall-placeholder.png" />
- </td>
- <td id="card" align="center">
- <img src="media/tall-placeholder.png" />
- </td>
- <td id="card" align="center">
- <img src="media/tall-placeholder.png" />
- </td>
- </tr>
- </table>
+  <div id="f1_container">
+  <div id="f1_card" class="shadow">
+    <div class="front face">
+      <img src="media/photo1.jpg"/>
+    </div>
+    <div class="back face center">
+      <p>This is nice for exposing more information about an image.</p>
+      <p>Any content can go here.</p>
+    </div>
+  </div>
+  </div>
  </body>
 </html>
