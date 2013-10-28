@@ -155,6 +155,7 @@ a {
 		font-size:1.4em;
 		display:block;
 		background-position:bottom;
+        background-size: 100%;
 	}
 
 	#headtitle {
@@ -170,7 +171,6 @@ a {
 
 #head {
     background-repeat:no-repeat;
-    background-size: 100%;
 }
 
 #headtitle {
