@@ -9,6 +9,7 @@
 * {
 	margin: 0px;
 	padding:0px;
+    z-index:5;
 }
 
 body {
@@ -169,6 +170,9 @@ a {
 
 #head {
     background-repeat:no-repeat;
+    position: relative;
+    z-index: 1 !important;
+    background-attachment:fixed;
 }
 
 #headtitle {
