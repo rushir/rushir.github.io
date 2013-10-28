@@ -168,6 +168,10 @@ a {
 	}
 }
 
+#head {
+    background-repeat:no-repeat;
+}
+
 #headtitle {
 	float:left;
 	padding:3%;
