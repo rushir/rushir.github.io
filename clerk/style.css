@@ -155,7 +155,6 @@ a {
 		font-size:1.4em;
 		display:block;
 		background-position:bottom;
-        background-size: 100%;
 	}
 
 	#headtitle {
@@ -167,6 +166,12 @@ a {
 	    top: 140px;
 		font-size:2em;
 	}
+}
+
+@media only screen and (min-width: 1110px) {
+    #head {
+        background-size: 100%;
+    }
 }
 
 #head {
