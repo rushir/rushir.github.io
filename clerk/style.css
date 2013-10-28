@@ -170,7 +170,6 @@ a {
 
 #head {
     background-repeat:no-repeat;
-    position: relative;
     z-index: 1 !important;
     background-attachment:fixed;
 }
@@ -181,6 +180,8 @@ a {
 	font-family: 'Baskerville', serif;
 	display:inline-block;
 	width:100px;
+    z-index: 2 !important;
+    background-attachment:fixed;
 }
 
 #headlinks {
@@ -190,6 +191,13 @@ a {
 	top:-57px;
 	width:100%;
 	clear:both;
+    z-index: 2 !important;
+    background-attachment:fixed;
+}
+
+#headtext {
+    z-index: 2 !important;
+    background-attachment:fixed;
 }
 
 #intro {
