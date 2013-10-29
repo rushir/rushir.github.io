@@ -40,6 +40,10 @@ a {
 	    top: 10px;
 		font-size:1.4em;
 	}
+    
+    #intro {
+    	padding: 0 2% 10% 2%;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -60,6 +64,10 @@ a {
 	    top: 40px;
 		font-size:1.4em;
 	}
+    
+    #intro {
+    	padding: 0 3% 10% 3%;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 800px) {
@@ -80,6 +88,10 @@ a {
 	    top: 60px;
 		font-size:1.4em;
 	}
+    
+    #intro {
+    	padding: 0 5% 10% 5%;
+    }
 }
 
 @media only screen and (min-width: 801px) and (max-width: 900px) {
@@ -100,6 +112,10 @@ a {
 	    top: 80px;
 		font-size:1.4em;
 	}
+    
+    #intro {
+    	padding: 0 6% 10% 6%;
+    }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
@@ -120,6 +136,10 @@ a {
 	    top: 90px;
 		font-size:1.9em;
 	}
+    
+    #intro {
+    	padding: 0 7% 10% 7%;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1050px) {
@@ -140,6 +160,10 @@ a {
 	    top: 90px;
 		font-size:1.9em;
 	}
+    
+    #intro {
+    	padding: 0 8% 10% 8%;
+    }
 }
 
 @media only screen and (min-width: 1051px) {
@@ -160,15 +184,23 @@ a {
 	    top: 140px;
 		font-size:2em;
 	}
+    
+    #intro {
+    	padding: 0 8% 10% 8%;
+    }
 }
 
 @media only screen and (min-width: 1110px) {
     #head {
         background-size: 100%;
     }
+    
+    #intro {
+    	padding: 0 10% 10% 10%;
+    }
 }
 
-#head {
+#head, #head div, #head div p, #head p, #head div a {
     background-repeat:no-repeat;
     z-index: 1 !important;
     background-attachment:fixed;
@@ -202,7 +234,6 @@ a {
 
 #intro {
 	margin: 5% 0 0 0;
-	padding: 0 5% 10% 5%;
 }
 
 #introleft {
