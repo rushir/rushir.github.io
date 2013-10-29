@@ -41,6 +41,10 @@ a {
 		font-size:1.4em;
 	}
     
+    #headlinks {
+        top:-20px;
+    }
+    
     #intro {
     	padding: 0 2% 10% 2%;
     }
@@ -64,6 +68,10 @@ a {
 	    top: 40px;
 		font-size:1.4em;
 	}
+    
+    #headlinks {
+        top:-61px;
+    }
     
     #intro {
     	padding: 0 3% 10% 3%;
@@ -89,6 +97,10 @@ a {
 		font-size:1.4em;
 	}
     
+    #headlinks {
+        top:-61px;
+    }
+    
     #intro {
     	padding: 0 5% 10% 5%;
     }
@@ -112,6 +124,10 @@ a {
 	    top: 80px;
 		font-size:1.4em;
 	}
+    
+    #headlinks {
+        top:-65px;
+    }
     
     #intro {
     	padding: 0 6% 10% 6%;
@@ -137,6 +153,10 @@ a {
 		font-size:1.9em;
 	}
     
+    #headlinks {
+        top:-65px;
+    }
+    
     #intro {
     	padding: 0 7% 10% 7%;
     }
@@ -160,6 +180,10 @@ a {
 	    top: 90px;
 		font-size:1.9em;
 	}
+    
+    #headlinks {
+        top:-70px;
+    }
     
     #intro {
     	padding: 0 8% 10% 8%;
@@ -185,6 +209,10 @@ a {
 		font-size:2em;
 	}
     
+    #headlinks {
+        top:-75px;
+    }
+    
     #intro {
     	padding: 0 8% 10% 8%;
     }
@@ -197,6 +225,10 @@ a {
     
     #intro {
     	padding: 0 10% 10% 10%;
+    }
+    
+    #headlinks {
+        top:-85px;
     }
 }
 
@@ -220,7 +252,6 @@ a {
 	text-align:center;
 	font-size:1.5em;
 	position:relative;
-	top:-57px;
 	width:100%;
 	clear:both;
     z-index: 2 !important;
