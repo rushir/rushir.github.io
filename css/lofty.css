@@ -1,0 +1,37 @@
+@font-face {
+	font-family: Pacifico;
+	src: url("font/Pacifico.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: Museo;
+	src: url("font/Museo300-Regular.otf") format("opentype");
+}
+
+body {
+	background-color: #63ace3;
+	color: #ffffff;
+	text-align: center;
+}
+
+p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#lofty {
+	font-family: Pacifico;
+	font-size: 15em;
+	padding-top: 4%;
+}
+
+#tagline {
+	font-family: Museo;
+	font-size: 3em;
+	padding-top: 10px;
+}
+
+#cs {
+	font-family: Pacifico;
+	font-size: 3em;
+}
