@@ -13,7 +13,6 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-
   text-align: center;
   text-rendering: optimizeLegibility;
 }
@@ -73,19 +72,21 @@
 /* Social Links
 ----------------------------- */
 nav {
-position:fixed;
+position: fixed;
+text-align: center;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
 text-align: center;
 margin-top: 450px;
 width:100%;
-left:0;
-top:0 
 }
   nav ul {
     display: block;
     line-height: -20;
     vertical-align: center;
     width: inherit; 
-    text-align: center;
     text-align: center;
   }
     nav ul li {
