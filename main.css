@@ -1,0 +1,138 @@
+/* Structure & Background
+----------------------------- */
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+.wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+.wrapper:after {
+  content: '';
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid rgba(255,255,255,.2);
+}
+.wrapper-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  margin-top: 5%;
+  max-width: 80%;
+}
+.triangle-pattern {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('triangles.png');
+  background-size: cover;
+  background-position: center;
+  opacity: .03;
+}
+
+/* Type
+----------------------------- */
+.name {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0;
+}
+.byline {
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+}
+.divider {
+  width: 300px;
+  margin-top: 75px;
+  border-color: rgba(255,255,255, .5);
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+/* Social Links
+----------------------------- */
+nav {
+position:fixed;
+text-align: center;
+margin-top: 450px;
+width:100%;
+left:0;
+top:0 
+}
+  nav ul {
+    display: block;
+    line-height: -20;
+    vertical-align: center;
+    width: inherit; 
+    text-align: center;
+    text-align: center;
+  }
+    nav ul li {
+        list-style: none;
+        margin: 30px 30px 50px; 
+        margin: 1.875rem 1.875rem 3.125rem;
+        font-family: "Lato", Arial, sans-serif;
+        font-size: .8125em;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        display:inline-block; 
+    }
+      nav ul li a,
+      nav ul li a:hover,
+      nav ul li a:visited {
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      }
+      nav ul li a:hover {
+      opacity: .5;
+      }
+/* Screens
+----------------------------- */
+@media (max-width: 800px) {
+  .name {
+    font-size: 55px;
+  }
+}
+@media (max-width: 400px) {
+  .name {
+    font-size: 30px;
+  }
+  .byline {
+    font-size: 12px;
+  }
+  .divider {
+    margin-top: 45px;
+  }
+  .social-links {
+    margin-top: 55px;
+  }
+}
