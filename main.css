@@ -83,6 +83,7 @@ margin-top: 450px;
 width:100%;
 }
   nav ul {
+    position: fixed;
     display: block;
     line-height: -20;
     vertical-align: center;
@@ -91,9 +92,9 @@ width:100%;
   }
     nav ul li {
         list-style: none;
-        margin: 30px 30px 50px; 
-        margin: 1.875rem 1.875rem 3.125rem;
-        font-family: "Lato", Arial, sans-serif;
+        margin: 30px 30px 30px; 
+        margin: 1.875rem 1.875rem 1.875rem;
+        font-family: 'Muli', sans-serif;
         font-size: .8125em;
         font-weight: 400;
         text-align: center;
@@ -114,12 +115,12 @@ width:100%;
 ----------------------------- */
 @media (max-width: 800px) {
   .name {
-    font-size: 50px;
+    font-size: 36px;
   }
 }
 @media (max-width: 400px) {
   .name {
-    font-size: 30px;
+    font-size: 35px;
   }
   .byline {
     font-size: 12px;
