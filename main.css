@@ -1,3 +1,6 @@
+@font-face { font-family: FreightBigLight; src: url('FreightBigLight.ttf'), url('fonts/FreightBigLight.woff') format('woff'), url('fonts/FreightBigLight.ttf') format('truetype'), url('fonts/FreightBigLight.svg') format('svg');; }
+
+
 /* Structure & Background
 ----------------------------- */
 .wrapper {
@@ -10,7 +13,7 @@
   background-size: cover;
   background-position: center;
   color: #fff;
-  text-transform: uppercase;
+
   text-align: center;
   text-rendering: optimizeLegibility;
 }
@@ -38,32 +41,23 @@
   margin-top: 5%;
   max-width: 80%;
 }
-.triangle-pattern {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('triangles.png');
-  background-size: cover;
-  background-position: center;
-  opacity: .03;
-}
 
 /* Type
 ----------------------------- */
 .name {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 1;
   letter-spacing: 0.18em;
   font-weight: 300;
   font-style: italic;
-  font-family: 'Merriweather', serif;
+  font-family: 'FreightBigLight', serif;
+  margin-top: 1px;
   margin-bottom: 0;
 }
 .byline {
   font-family: 'Muli', sans-serif;
   font-size: 12px;
+  text-transform: uppercase;
   line-height: 1.6;
   font-weight: 300;
   letter-spacing: 0.3em;
@@ -119,7 +113,7 @@ top:0
 ----------------------------- */
 @media (max-width: 800px) {
   .name {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 @media (max-width: 400px) {
