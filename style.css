@@ -111,11 +111,25 @@ html, body {
     #main {
         margin-top:155%;
     }
+    #headtext {
+        font-size: 36px;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px;
+    }
 }
 
 @media screen and (min-width:450px) and (max-width:599px) {
     #main {
         margin-top:140%;
+    }
+    #headtext {
+        font-size: 36px;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px
     }
 }
 
@@ -123,11 +137,25 @@ html, body {
     #main {
         margin-top:110%;
     }
+    #headtext {
+        font-size: 36px;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px
+    }
 }
 
 @media screen and (min-width:660px) and (max-width:719px) {
     #main {
         margin-top:100%;
+    }
+    #headtext {
+        font-size: 36px;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px
     }
 }
 
