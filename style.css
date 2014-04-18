@@ -1,5 +1,7 @@
-@font-face { font-family: FreightBigLight; src: url('FreightBigLight.ttf'), url('fonts/FreightBigLight.woff') format('woff'), url('fonts/FreightBigLight.ttf') format('truetype'), url('fonts/FreightBigLight.svg') format('svg');; }
-
+@font-face {
+  font-family: 'Avenir Next Regular';
+  src: url("../fonts/AvenirNextLTPro-Regular") format("opentype");
+}
 
 html, body {
     padding:0;
@@ -17,24 +19,13 @@ html, body {
     width:100%;
     z-index:1;
 }
-/*
-.wrapper {
-  content: '';
-  position:fixed;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
-  border: 1px solid rgba(255,255,255,.2);
-}
-*/
+
 #headtext {
     font-size: 60px;
     line-height: 1;
     letter-spacing: 0.18em;
     font-weight: 300;
-    font-style: italic;
-    font-family: 'FreightBigLight', serif;
+    font-family: 'Avenir Next', sans-serif;
     color: #fff;
     position:relative;
     top:35%;
@@ -45,7 +36,7 @@ html, body {
 }
 
 .byline {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Avenir Next', sans-serif;
   font-size: 12px;
   color: #fff;
   text-transform: uppercase;
@@ -68,7 +59,7 @@ html, body {
 }
 
 #headlinks {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
 	text-align:center;
     list-style: none;
 	position:relative;
@@ -93,7 +84,7 @@ html, body {
 }
 
 #main {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     background-color:#2A2232;
     position:relative;
     width:100%;
@@ -101,7 +92,7 @@ html, body {
 }
 
 #work {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     background-color:#DCAB69;
     position:relative;
     width:100%;
@@ -109,7 +100,7 @@ html, body {
 }
 
 .content {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Avenir Next', sans-serif;
     width:80%;
     margin-left:auto;
     margin-right:auto;
