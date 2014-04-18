@@ -84,8 +84,7 @@ html, body {
 
 #main {
     font-family: 'Muli', sans-serif;
-	color: #fff;
-    background-color:#201929;
+    background-color:#2A2232;
     position:relative;
     width:100%;
     z-index:2;
@@ -183,9 +182,9 @@ html, body {
     }
 }
 
-.darktext {color:#333;}
+.darktext {color:#000;}
 .darktext a, .darktext a:visited {
-    color:#333;
+    color:#000;
 }
 
 .lighttext {color:#fff;}
