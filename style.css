@@ -84,6 +84,7 @@ html, body {
 
 #main {
     font-family: 'Muli', sans-serif;
+	color: #fff;
     background-color:#201929;
     position:relative;
     width:100%;
@@ -92,7 +93,7 @@ html, body {
 
 #work {
     font-family: 'Muli', sans-serif;
-    background-color:#fff;
+    background-color:#201929;
     position:relative;
     width:100%;
     z-index:2;
