@@ -3,6 +3,7 @@
   src: url("/fonts/AvenirNextLTPro-Regular") format("opentype");
 }
 
+
 html, body {
     padding:0;
     margin:0;
@@ -21,7 +22,7 @@ html, body {
 }
 
 #headtext {
-    font-size: 72px;
+    font-size: 75px;
     line-height: 1;
     letter-spacing: 0.18em;
     font-weight: 300;
@@ -71,7 +72,6 @@ html, body {
     display:inline-block; 
 	width:100%;
     display:block;
-
 }
 
 #headlinks a:hover {
@@ -85,7 +85,7 @@ html, body {
 
 #main {
     font-family: 'Avenir Next Regular', sans-serif;
-    background-color:#2A2232;
+    background-color:#f4f3ef;
     position:relative;
     width:100%;
     z-index:2;
@@ -93,7 +93,7 @@ html, body {
 
 #work {
     font-family: 'Avenir Next Regular', sans-serif;
-    background-color:#DCAB69;
+    background-color:#243434;
     position:relative;
     width:100%;
     z-index:2;
@@ -105,7 +105,7 @@ html, body {
     margin-left:auto;
     margin-right:auto;
     padding:7% 0 7% 0;
-    font-size:1.3em;
+    font-size:1.2em;
 }
 
 @media screen and (max-width:449px) {
@@ -183,12 +183,12 @@ html, body {
     }
 }
 
-.darktext {color:#000;}
+.darktext {color:#fff;}
 .darktext a, .darktext a:visited {
-    color:#000;
+    color:#fff;
 }
 
-.lighttext {color:#fff;}
+.lighttext {color:#403d39;}
 .lighttext a, .lighttext a:visited {
-    color:#fff;
+    color:#403d39;
 }
