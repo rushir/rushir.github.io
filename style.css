@@ -27,20 +27,6 @@ html {
     
 }
 
-#head {
-    position:fixed;
-    top:0;
-    left:0;
-    background-repeat: repeat;
-    background-image:url("img/bg-noise.png");
-    background-position:center;
-    background-size:cover;
-    height:100%;
-    width:100%;
-    z-index:1;
-}
-
-
 @media (max-width: 63.99rem) {
   html { font-size: 112%; }
 }
@@ -77,6 +63,8 @@ body {
 
 .nav {
     height:100px;
+	background-position:center center;
+	background-attachment:fixed;
 }
 
 .nav ul {
@@ -109,6 +97,8 @@ body {
 }
 
 .bleed {
+	background-attachment: fixed;
+	background-position: center center;
 	background-color: #333;
 	height: 545px;
 	margin: 0;
@@ -160,11 +150,22 @@ h3 {
     color: #fff;
 }
 
-
+#nav {
+	z-index:2;
+	width:100%;
+    position:relative;
+}
+#bleed {
+	z-index:2;
+	width:100%;
+    position:relative;
+}
 #main {
     font-family: 'Avenir Next Regular', sans-serif;
     background: url("img/struckaxiom.png") repeat center;
+	background-attachment: fixed;
     background-position-y: -2.75rem;
+	background-position: center center;
     position:relative;
     width:100%;
     z-index:2;
