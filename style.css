@@ -160,6 +160,24 @@ h3 {
 	width:100%;
     position:relative;
 }
+
+.profile {
+    float:left;
+    width:256px;
+    height:256px;
+    padding-left:7%;
+    padding-top:7%;
+}
+
+.content {
+    font-family: 'Avenir Next Regular', sans-serif;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:7% 0 7% 0;
+    font-size:1.2em;
+}
+
 #main {
     font-family: 'Avenir Next Regular', sans-serif;
     background: url("img/struckaxiom.png") repeat center;
@@ -181,19 +199,11 @@ h3 {
 
 .about {
     font-family: 'Avenir Next Regular', sans-serif;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    padding:7% 0 7% 0;
+    width:65%;
+    padding:9% 7% 9% 0;
     font-size:1.2em;
-}
-.content {
-    font-family: 'Avenir Next Regular', sans-serif;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    padding:7% 0 7% 0;
-    font-size:1.2em;
+    max-width:850px;
+    float:right;
 }
 
 #headtext {
@@ -210,6 +220,23 @@ h3 {
         top: 32%;
         font-size: 11px;
     }
+    
+    .profile {
+        float:none;
+        width:256px;
+        height:256px;
+        margin-top:15%;
+        margin-left:auto;
+        margin-right:auto;
+        padding:0;
+    }
+    
+    .about {
+        width:95%;
+        margin: 10% auto 0 auto;
+        padding:0;
+        float:none;
+    }
 }
 
 @media screen and (min-width:450px) and (max-width:599px) {
@@ -220,6 +247,7 @@ h3 {
         top: 32%;
         font-size: 11px
     }
+
 }
 
 @media screen and (min-width:600px) and (max-width:659px) {
@@ -229,6 +257,45 @@ h3 {
     .byline {
         top: 32%;
         font-size: 11px
+    }
+}
+
+
+@media screen and (min-width:450px) and (max-width:700px) {      
+    .profile {
+        float:none;
+        width:256px;
+        height:256px;
+        margin-top:15%;
+        margin-left:auto;
+        margin-right:auto;
+        padding:0 0 0 0 !important;
+    }
+    
+    .about {
+        width:85%;
+        margin: 10% auto 0 auto;
+        padding:0 0 0 0 !important;
+        float:none;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:920px) {      
+    .profile {
+        float:none;
+        width:256px;
+        height:256px;
+        margin-top:8%;
+        margin-left:auto;
+        margin-right:auto;
+        padding:0 0 0 0 !important;
+    }
+    
+    .about {
+        width:75%;
+        margin: 5% auto 0 auto;
+        padding:0 0 0 0 !important;
+        float:none;
     }
 }
 
