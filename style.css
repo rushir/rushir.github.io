@@ -24,7 +24,6 @@ html {
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-    
 }
 
 @media (max-width: 63.99rem) {
@@ -370,7 +369,7 @@ h3 {
     .about {
         float:none;
         width:75%;
-        margin: 0 0 0 33% !important;
+        margin: 0 0 0 36% !important;
         
     }
 }
