@@ -26,6 +26,10 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+body {
+    overflow-x:hidden;
+}
+
 @media (max-width: 63.99rem) {
   html { font-size: 112%; }
 }
