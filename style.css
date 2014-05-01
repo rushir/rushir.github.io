@@ -203,7 +203,7 @@ h3 {
     background-position-y: -2.75rem;
 	background-position: center center;
     position:relative;
-    margin-top:50%;
+    margin-top:600px;
     width:100%;
     z-index:2;
 }
@@ -240,6 +240,15 @@ h3 {
     #headtext {
         font-size: 1.8em !important;
     }
+    
+    .profile {
+        padding-top:8%;
+    }
+    
+    .about {
+        margin-top:8%;
+    }
+    
     .byline {
         top: 32%;
         font-size: 11px;
