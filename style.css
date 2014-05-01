@@ -241,6 +241,10 @@ h3 {
         font-size: 1.8em !important;
     }
     
+    .bleed {
+        padding-top:50px;
+    }
+    
     .profile {
         padding-top:8%;
     }
