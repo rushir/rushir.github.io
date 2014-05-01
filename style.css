@@ -198,10 +198,7 @@ h3 {
 
 #main {
     font-family: 'Avenir Next Regular', sans-serif;
-    background: url("img/struckaxiom.png") repeat center;
-	background-attachment: fixed;
-    background-position-y: -2.75rem;
-	background-position: center center;
+    background: rgb(255,252,245);
     position:relative;
     margin-top:600px;
     width:100%;
