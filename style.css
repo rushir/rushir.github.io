@@ -157,20 +157,35 @@ h3 {
 #nav {
 	z-index:2;
 	width:100%;
-    position:relative;
+    position:fixed;
+    top:0;
+    background-color:rgb(255,252,245);
 }
 #bleed {
-	z-index:2;
+	z-index:1;
 	width:100%;
     position:relative;
 }
 
+#bleed {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+}
+
 .profile {
-    float:left;
     width:256px;
     height:256px;
-    padding-left:7%;
-    padding-top:7%;
+    margin: 5% auto 0 auto;
+    display:block;
+    padding-top: 5%;
+    padding-bottom:3%;
 }
 
 .content {
@@ -178,7 +193,6 @@ h3 {
     width:80%;
     margin-left:auto;
     margin-right:auto;
-    padding:7% 0 7% 0;
     font-size:1.2em;
 }
 
@@ -189,6 +203,7 @@ h3 {
     background-position-y: -2.75rem;
 	background-position: center center;
     position:relative;
+    margin-top:50%;
     width:100%;
     z-index:2;
 }
@@ -199,47 +214,35 @@ h3 {
     position:relative;
     width:100%;
     z-index:2;
+    padding-bottom:4%;
 }
 
 .about {
     font-family: 'Avenir Next Regular', sans-serif;
-    width:65%;
-    padding:9% 7% 9% 0;
-    font-size:1.2em;
-    max-width:900px;
-    float:right;
+    margin-top:4%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:3% 0 3% 0;
+    font-size:1.3em;
+    max-width:995px;
+    width:70%;
 }
 
 #headtext {
+    margin-top:0;
     text-align:center;
-    margin-top:-0.5%;
+    padding-top:1em;
+    font-size:2.7em !important;
 }
 
 
 @media screen and (max-width:449px) {
     #headtext {
-        font-size: 3em;
+        font-size: 1.8em !important;
     }
     .byline {
         top: 32%;
         font-size: 11px;
-    }
-    
-    .profile {
-        float:none;
-        width:256px;
-        height:256px;
-        margin-top:15%;
-        margin-left:auto;
-        margin-right:auto;
-        padding:0;
-    }
-    
-    .about {
-        width:95%;
-        margin: 10% auto 0 auto;
-        padding:0;
-        float:none;
     }
     
     .container, .nav {
@@ -275,7 +278,7 @@ h3 {
 
 @media screen and (min-width:450px) and (max-width:599px) {
     #headtext {
-        font-size: 3em;
+        font-size: 2em !important;
     }
     .byline {
         top: 32%;
@@ -314,67 +317,11 @@ h3 {
 
 @media screen and (min-width:600px) and (max-width:659px) {
     #headtext {
-        font-size: 3em;
+        font-size: 2.5em !important;
     }
     .byline {
         top: 32%;
         font-size: 11px
-    }
-}
-
-
-@media screen and (min-width:450px) and (max-width:700px) {      
-    .profile {
-        float:none;
-        width:256px;
-        height:256px;
-        margin-top:15%;
-        margin-left:auto;
-        margin-right:auto;
-        padding:0 0 0 0 !important;
-    }
-    
-    .about {
-        width:85%;
-        margin: 10% auto 0 auto;
-        padding:0 0 0 0 !important;
-        float:none;
-    }
-}
-
-@media screen and (min-width:701px) and (max-width:920px) {      
-    .profile {
-        float:none;
-        width:256px;
-        height:256px;
-        margin-top:8%;
-        margin-left:auto;
-        margin-right:auto;
-        padding:0 0 0 0 !important;
-    }
-    
-    .about {
-        width:75%;
-        margin: 5% auto 0 auto;
-        padding:0 0 0 0 !important;
-        float:none;
-    }
-}
-
-@media screen and (min-width:921px) {      
-    .profile {
-        margin-top:7%;
-        margin-left:auto;
-        margin-right:auto;
-        margin-bottom:7%;
-        padding:0 0 0 15% !important;
-    }
-    
-    .about {
-        float:none;
-        width:75%;
-        margin: 0 0 0 36% !important;
-        
     }
 }
 
