@@ -336,9 +336,20 @@ h3 {
     }
     .byline {
         top: 32%;
-        font-size: 11px
+        font-size: 11px;
     }
 }
+
+@media screen and (max-width:599px) {
+    .nav a {
+        font-size: 0.68em !important;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px;
+    }
+}
+
 
 .darktext {color:#fff;}
 .darktext a, .darktext a:visited {
