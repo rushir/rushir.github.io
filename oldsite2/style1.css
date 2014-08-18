@@ -1,0 +1,362 @@
+@font-face {
+	font-family: 'Avenir Next Bold';
+	src: url("fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: 'Avenir Next Regular';
+	src: url("fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: 'Avenir Next Light';
+	src: url("fonts/AvenirNextLTPro-UltLt.otf") format("opentype");
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+html {
+
+	font: 100%/1.5 "Avenir Next Regular", "Avenir Next Regular", sans-serif;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+@media (max-width: 63.99rem) {
+  html { font-size: 112%; }
+}
+
+
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+    
+}
+.divider {
+  width: 300px;
+  position:relative;
+  top: 34%;
+  border-color: rgba(255,255,255, .5);
+  border-width: 0;
+  border-bottom-width: 1px;
+
+}
+
+
+body {
+    background: url("img/struckaxiom.png") repeat center;
+	/*background-color: #fffcf5;*/
+	color: #555;
+	margin: 0;
+    padding-top:0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 48rem;
+	width: 90%;
+}
+
+.nav {
+    height:100px;
+	background-position:center center;
+	background-attachment:fixed;
+}
+
+.nav ul {
+	list-style: none;
+    margin-top:0;
+    padding-top:0;
+}
+
+.nav li {
+	display: inline;
+	float: right;
+	text-align: center;
+    line-height:100px;
+    vertical-align:middle;
+    margin-right:1%;
+}
+
+.nav a:hover {
+	color: #eb5e28 !important;
+}
+
+.nav a {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Avenir Next Bold', sans-serif;
+	font-size: 0.70rem;
+	color: #555;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.bleed {
+	background-attachment: fixed;
+	background-position: center center;
+	background-color: #333;
+	height: 545px;
+	margin: 0;
+	padding-left: 22.7%;
+	padding-top: 179px;
+	background: url("img/shiftheader1.png") 70% -100px no-repeat, url("img/bg-about-noise.png") 0px 0px;
+	background: -o-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.4) 50%), url("img/shiftheader1.png") no-repeat 50% 0, #243437 url("img/bg-about-noise.png") repeat 50% 50%;	background-size: 700px, auto;
+	background: -webkit-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0, #243437 url("img/bg-about-noise.png") repeat 50% 50%;
+	background: -moz-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0, #243437 url("img/bg-about-noise.png") repeat 50% 50%;
+	background: -o-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0, #243437 url("img/bg-about-noise.png") repeat 50% 50%;
+	background: -ms-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0, #243437 url("img/bg-about-noise.png") repeat 50% 50%;
+}
+
+.bleed h1 {
+	font-size: 2.7rem;
+	color: #fff;
+	margin-top: -25px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	position: relative;
+	z-index: 1 !important;
+    line-height:1.2em;
+}
+
+.bleed h2 {
+	font-family: 'Avenir Next Regular', sans-serif;
+	font-weight: 300;
+	margin-top: -20px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+    letter-spacing: -.02em;
+    line-height: 1.3em;
+	font-size: 3.73em;
+	color: #fffcf5;
+	position: relative;
+	z-index: 1 !important;
+}
+
+h1 {
+	font-family: 'Avenir Next Bold', sans-serif;
+    letter-spacing: -.02em;
+	text-transform: uppercase;
+	font-size: 3.72em !important;
+}
+
+h3 {
+    font-family: 'Avenir Next Regular', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #fff;
+}
+
+#nav {
+	z-index:2;
+	width:100%;
+    position:fixed;
+    top:0;
+    background-color:rgb(255,252,245);
+}
+#bleed {
+	z-index:1;
+	width:100%;
+    position:relative;
+}
+
+#bleed {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+}
+
+.profile {
+    width:256px;
+    height:256px;
+    margin: 5% auto 0 auto;
+    display:block;
+    padding-top: 5%;
+    padding-bottom:3%;
+}
+
+.content {
+    font-family: 'Avenir Next Regular', sans-serif;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.2em;
+}
+
+#main {
+    font-family: 'Avenir Next Regular', sans-serif;
+    background: rgb(255,252,245);
+    position:relative;
+    margin-top:600px;
+    width:100%;
+    z-index:2;
+}
+
+#work {
+    font-family: 'Avenir Next Regular', sans-serif;
+    background-color:#243434;
+    position:relative;
+    width:100%;
+    z-index:2;
+    padding-bottom:4%;
+}
+
+.about {
+    font-family: 'Avenir Next Regular', sans-serif;
+    margin-top:4%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:3% 0 3% 0;
+    font-size:1.3em;
+    max-width:995px;
+    width:70%;
+}
+
+#headtext {
+    margin-top:0;
+    text-align:center;
+    padding-top:1em;
+    font-size:2.7em !important;
+}
+
+@media screen and (max-width:380px) {
+    .nav li {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width:449px) {
+    #headtext {
+        font-size: 1.8em !important;
+    }
+    
+    .bleed {
+        padding-top:80px;
+    }
+    
+    .profile {
+        padding-top:8%;
+    }
+    
+    .about {
+        margin-top:8%;
+    }
+    
+    .byline {
+        top: 32%;
+        font-size: 11px;
+    }
+    
+    .container, .nav {
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:auto;
+        padding-right:auto;
+    }
+    
+    .nav li {
+        float:none;
+        width:22%;
+        display:inline-block;
+    }
+    
+    
+.bleed h1 {
+	margin-top: -15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+    margin-left:-55px;
+    line-height:1.1em;
+}
+
+.bleed h2 {
+	margin-top: -20px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+    margin-left:-55px;
+    line-height: 1.3em;
+}
+}
+
+@media screen and (min-width:450px) and (max-width:599px) {
+    #headtext {
+        font-size: 2em !important;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px
+    }
+    
+    .container, .nav {
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:auto;
+        padding-right:auto;
+    }
+    
+    .nav li {
+        float:none;
+        width:94px;
+        display:inline-block;
+    }
+    
+.bleed h1 {
+	margin-top: -15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+    margin-left:-55px;
+    line-height:1.1em;
+}
+
+.bleed h2 {
+	margin-top: -20px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+    margin-left:-55px;
+    line-height: 1.3em;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:659px) {
+    #headtext {
+        font-size: 2.5em !important;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .nav a {
+        font-size: 0.68em !important;
+    }
+    .byline {
+        top: 32%;
+        font-size: 11px;
+    }
+}
+
+
+.darktext {color:#fff;}
+.darktext a, .darktext a:visited {
+    color:#fff;
+}
+
+.lighttext {color:#403d39;}
+.lighttext a, .lighttext a:visited {
+    color:#403d39;
+}

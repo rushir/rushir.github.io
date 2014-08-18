@@ -1,0 +1,147 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .sample#postnormal .text:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+body {
+  background: #eaeaea;
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+footer {
+  padding: 50px;
+  text-align: center; }
+  footer p {
+    color: #555;
+    font: 400 16px/1 "open sans";
+    margin: 0 0 2em 0; }
+    footer p a {
+      color: #555;
+      font-weight: 700; }
+      footer p a:hover {
+        color: #000; }
+
+
+.sample#postnormal {
+  background: #222a30;
+  padding: 100px 0; }
+  .sample#postnormal .text {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    width: 860px; }
+  .sample#postnormal .source {
+    clear: both;
+    font: normal 10px/16px "pt mono";
+    opacity: 0.3;
+    padding: 28px 0 0 0;
+    text-transform: uppercase; }
+  .sample#postnormal h2 {
+    color: #ee445f;
+    font: bold 164px/1 "oswald";
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+    .sample#postnormal h2:nth-child(1) {
+      left: 60px; }
+    .sample#postnormal h2:nth-child(2) {
+      top: 160px;
+      text-align: center; }
+    .sample#postnormal h2:nth-child(3) {
+      text-align: right;
+      top: 318px; }
+  .sample#postnormal ol {
+    float: left;
+    position: relative;
+    width: auto;
+    z-index: 2; }
+    .sample#postnormal ol li {
+      color: #fff;
+      font: normal 13px/54px "pt mono";
+      letter-spacing: 5px; }
+    .sample#postnormal ol.normal {
+      left: 48px;
+      opacity: 0.3; }
+    .sample#postnormal ol.forward {
+      margin: 0 60px; }
+
+
+.content {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:1.2em;
+}
+.darktext {color:#fff;}
+.darktext a, .darktext a:visited {
+    color:#fff;
+}
+#work {
+    background-color:#293a42;
+    position:relative;
+    width:100%;
+    z-index:2;
+    padding-bottom:4%;
+}
