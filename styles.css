@@ -1,9 +1,3 @@
-/* Global Reset
-------------------------------------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,20 +60,19 @@ body {
 
 a {
   color: inherit;
+  border-bottom:3px solid #fff;
   text-decoration: none; }
+a:hover{
+  opacity: .5;
+}
 
-footer {
-  padding: 50px;
-  text-align: center; }
-  footer p {
-    color: #555;
-    font: 400 16px/1 "open sans";
-    margin: 0 0 2em 0; }
-    footer p a {
-      color: #555;
-      font-weight: 700; }
-      footer p a:hover {
-        color: #000; }
+
+.sample{
+    margin:0px;
+    bottom:0px;
+    width:100%;
+    float:left;
+}
 
 
 .sample#postnormal {
@@ -122,26 +115,28 @@ footer {
       font: normal 13px/54px "pt mono";
       letter-spacing: 5px; }
     .sample#postnormal ol.normal {
-      left: 48px;
+      left: 10px;
       opacity: 0.3; }
     .sample#postnormal ol.forward {
       margin: 0 60px; }
 
 
 .content {
-    width:80%;
+    float:right;
+    position:right;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
     font-size:1.2em;
 }
-.darktext {color:#fff;}
+.darktext {color:#000;}
 .darktext a, .darktext a:visited {
-    color:#fff;
+    color:#000;
 }
 #work {
     background-color:#293a42;
-    position:relative;
-    width:100%;
-    z-index:2;
-    padding-bottom:4%;
+    width:200%;
+    position:left;
 }
+
+
