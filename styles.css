@@ -127,6 +127,8 @@ a:hover{
 
 
 .content {
+    background-color: #293a42;
+    min-height: 100%;
     float:right;
     position:right;
     width:100%;
@@ -137,12 +139,13 @@ a:hover{
 .darktext {color:#000;}
 .darktext a, .darktext a:visited {
     color:#000;
+    min-height: 100%;
     text-align: center;
 }
 #work {
+    min-height: 100%;
     background-color:#293a42;
     width:80%;
-    position:left;
     text-align: right;
     display: inline-block;
 }
