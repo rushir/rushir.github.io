@@ -24,7 +24,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  overflow-y: hidden; }
 
 ol, ul {
   list-style: none; }
@@ -54,7 +55,10 @@ table {
   height: 0; }
 
 body {
+  white-space: nowrap;
+  max-height: 100%;
   background: #eaeaea;
+  overflow-y: hidden;
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   -webkit-text-size-adjust: 100%; }
 
@@ -76,6 +80,7 @@ a:hover{
 
 
 .sample#postnormal {
+  display: inline-block;
   background: #222a30;
   padding: 100px 0; }
   .sample#postnormal .text {
@@ -132,11 +137,14 @@ a:hover{
 .darktext {color:#000;}
 .darktext a, .darktext a:visited {
     color:#000;
+    text-align: center;
 }
 #work {
     background-color:#293a42;
-    width:200%;
+    width:80%;
     position:left;
+    text-align: right;
+    display: inline-block;
 }
 
 
