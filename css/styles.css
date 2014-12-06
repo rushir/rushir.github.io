@@ -23,18 +23,30 @@ h1, h2, p { margin: 0; padding: 0; }
 .section-oak { padding: 30px 20px 25px 20px; }
 .section-oak .container { text-align: center; }
 .section-oak .containerbottom {  margin-top: 30px; padding: 20px 30px 40px; }
-.section-oak .caption { margin-bottom: 0; text-align: left; }
+.section-oak .caption { margin-bottom: 0; text-align: right; }
 .section-oak h2 { font: 24px/24px 'Unica One', sans-serif; text-transform: uppercase; text-align: center; color: #000; margin: 20px 20px 30px; }
 .section-oak p { font: 16px/24px 'Vollkorn', serif; color: #333; width: 460px; text-align: justify; margin: 0 auto;}
 .section-oak .profile { margin-top: 60px; }
 
+/* Sub-tablet <1000px */
+@media (max-width: 1000px) {
+
+    .section-oak .caption { margin-bottom: 0; text-align: right; }
+    .section-oak .container { width: 100%; }
+    .section-oak .containerbottom { text-align: center; }
+    .section-oak .containerbottom { width: auto; padding: 0 20px; }
+    .section-oak .containerbottom { margin-top: 30px; padding: 20px 30px 40px; }
+    .section-oak p { max-width: 460px; width: auto; padding: 0 20px; }
+
+}
+
 /* Sub-tablet <768px */
 @media (max-width: 768px) {
-    .section-oak .caption { width: 100%; }
-    .caption { margin: 0px 0px; }
-    .caption a { font: 12.7px 'Unica One', Helvetica, Arial, sans-serif; letter-spacing: .1em; color: #999; text-transform: uppercase; text-decoration: none; }
-    .section-oak h2 { font: 24px/24px 'Unica One', sans-serif; text-transform: uppercase; text-align: center; color: #000; margin: 20px 20px 30px; }
+    .caption a { font: 17px/16px 'Unica One', Helvetica, Arial, sans-serif; letter-spacing: .1em; color: #999; text-transform: uppercase; text-decoration: none; }
+    .section-oak .caption { line-height: 25px; }
+    .section-oak .caption { margin-bottom: 0; text-align: center; }
     .section-oak .container { width: 100%; }
+    .section-oak h2 { font: 24px/24px 'Unica One', sans-serif; text-transform: uppercase; text-align: center; color: #000; margin: 20px 0px 30px; }
     .section-oak .containerbottom { text-align: center; }
     .section-oak .containerbottom { width: auto; padding: 0 20px; }
     .section-oak .containerbottom { margin-top: 30px; padding: 20px 30px 40px; }
