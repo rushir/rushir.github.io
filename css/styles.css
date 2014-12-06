@@ -42,7 +42,7 @@ h1, h2, p { margin: 0; padding: 0; }
 
 /* Sub-tablet <768px */
 @media (max-width: 768px) {
-    .caption a { font: 17px/16px 'Unica One', Helvetica, Arial, sans-serif; letter-spacing: .1em; color: #999; text-transform: uppercase; text-decoration: none; }
+    .caption a { font: 20px/16px 'Unica One', Helvetica, Arial, sans-serif; letter-spacing: .1em; color: #999; text-transform: uppercase; text-decoration: none; }
     .section-oak .caption { line-height: 25px; }
     .section-oak .caption { margin-bottom: 0; text-align: center; }
     .section-oak .container { width: 100%; }
