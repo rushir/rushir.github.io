@@ -46,7 +46,7 @@ h1, h2, p { margin: 0; padding: 0; }
     .section-oak .caption { line-height: 25px; }
     .section-oak .caption { margin-bottom: 0; text-align: center; }
     .section-oak .container { width: 100%; }
-    .section-oak h2 { font: 24px/24px 'Unica One', sans-serif; text-transform: uppercase; text-align: center; color: #000; margin: 20px 0px 30px; }
+    .section-oak h2 { font: 22px/24px 'Unica One', sans-serif; text-transform: uppercase; text-align: center; color: #000; margin: 20px 0px 30px; }
     .section-oak .containerbottom { text-align: center; }
     .section-oak .containerbottom { width: auto; padding: 0 20px; }
     .section-oak .containerbottom { margin-top: 30px; padding: 20px 30px 40px; }
