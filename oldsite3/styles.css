@@ -126,28 +126,31 @@ a:hover{
       margin: 0 60px; }
 
 
+
+
 .content {
-    background-color: #293a42;
-    min-height: 100%;
-    float:right;
-    position:right;
-    width:100%;
+    font-family: 'Avenir Next Regular', sans-serif;
+    width:80%;
     margin-left:auto;
     margin-right:auto;
     font-size:1.2em;
 }
-.darktext {color:#000;}
-.darktext a, .darktext a:visited {
-    color:#000;
-    min-height: 100%;
-    text-align: center;
-}
+
+
+
 #work {
-    min-height: 100%;
-    background-color:#293a42;
-    width:80%;
-    text-align: right;
-    display: inline-block;
+    font-family: 'Avenir Next Regular', sans-serif;
+    background-color:#243434;
+    position:relative;
+    width:100%;
+    z-index:3;
+    padding-bottom:4%;
 }
 
 
+#headtext {
+    margin-top:0;
+    text-align:center;
+    padding-top:1em;
+    font-size:2.7em !important;
+}
