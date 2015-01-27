@@ -1,0 +1,949 @@
+/* =============================================================================
+   GENERAL LAYOUT
+   ========================================================================== */
+
+    body{
+        opacity: 0;
+        margin: 0; padding: 0;
+
+        font-family: 'Proxima Nova', 'helvetica', arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color: #000;
+
+        background: #f4f4f4; background-image: url("img/bg-white-noise.jpg");
+        background-attachment: fixed;
+
+        -webkit-text-size-adjust: none;
+    }
+
+    ::-moz-selection { background: #ccc; color: #000; text-shadow: none; }
+    ::selection { background: #ccc; color: #000; text-shadow: none; }
+
+    .smbr{
+        display: none;
+    }
+
+    #fullprojectinfo-content a{
+        color: #000;
+    }
+    #fullprojectinfo-content a:hover{
+        text-decoration: none;
+    }
+    .gplus{
+        display: none;
+    }
+
+/* =============================================================================
+   VIDEO EMBEDDING
+   ========================================================================== */
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+
+    .embed-container iframe,
+    .embed-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-width: 1600px;
+    }
+
+/* =============================================================================
+   PAGE: OPEN PROJECT
+   ========================================================================== */
+
+    #openproject{
+        position: fixed; top: 0; left: 0;
+        display: none; z-index: 5000;
+        width: 100%; height: 100%;
+        overflow-x: hidden; overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        background: #f4f4f4; background-image: url("img/bg-white-noise.jpg");
+    }
+    #openproject-images{
+        text-align: center;
+    }
+    #openproject-images img{
+        width: 100%;
+        max-width: 1600px;
+        cursor: url('img/close-cursor.png'), e-resize;
+    }
+    .openproject-images-0{
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+    }
+    .openproject-images-70{
+        opacity: 0.7;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+    }
+    .openproject-images-100{
+        opacity: 1;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+    }
+    #projecttitle{
+        top: 180px; left: 55px;
+        position: fixed;
+        z-index: 6000;
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+        display: inline;
+    }
+    .projecttitle-hide{
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        margin-left: -2000px;
+    }
+    .projecttitle-show{
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        margin-left: 0px;
+    }
+
+    #moreinfo{
+        width: 30px; height: 29px;
+        position: fixed; left: 55px; bottom: 55px;
+        z-index: 6000; cursor: pointer;
+    }
+    #moreinfo img{
+        width: 100%;
+    }
+
+    #fullprojectinfo{
+        display: none;
+        position: fixed;
+        bottom: 95px; left: 20px;
+        z-index: 6000;
+    }
+
+    #fullprojectinfo-title{
+        display: inline-block;
+        font-size: 36px; line-height: 45px; font-weight: bold;
+        padding: 10px 15px 0px 15px; background: #fff;
+    }
+    #fullprojectinfo-tags{
+        display: inline-block;
+        font-size: 11px; line-height: 14px;
+        padding: 10px 15px 10px 15px; background: #fff;
+    }
+
+    #fullprojectinfo-content{
+        max-width: 600px;
+    }
+    #fullprojectinfo-content p{
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    #fullprojectinfo-content p{
+        display: inline-block;
+        font-size: 14px; line-height: 18px;
+        padding: 10px 15px 10px 15px; background: #fff;
+    }
+
+/* =============================================================================
+   FIXED ELEMENTS
+   ========================================================================== */
+
+    #bleed-logo{
+        width: 34px; height: 84px;
+        position: fixed; top: 55px; left: 55px;
+        cursor: pointer;
+        z-index: 95000; opacity: 1;
+
+        /* -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out; */
+    }
+    #bleed-logo:hover{
+        opacity: 0.7;
+
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+    }
+    #bleed-logo:active{
+        opacity: 1;
+
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        -o-transition: all 0.15s ease-out;
+    }
+    #bleed-logo img{
+        width: 100%;
+    }
+
+    #activetext{
+        top: 180px; left: 55px;
+        position: fixed;
+        z-index: 2000;
+    }
+    .activetext-page-start{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+    }
+    .activetext-page-work{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+    }
+    .activetext-page-clients{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+    }
+    .activetext-page-awards{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+    }
+    .activetext-page-people{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        white-space: nowrap; pointer-events: none;
+    }
+    .activetext-page-manifesto1, .activetext-page-manifesto2, .activetext-page-manifesto3, .activetext-page-manifesto4, .activetext-page-manifesto5, .activetext-page-manifesto6, .activetext-page-manifesto7, .activetext-page-manifesto8, .activetext-page-manifesto9, .activetext-page-manifesto10{
+        font-size: 90px; line-height: 100px;
+        font-weight: bold; letter-spacing: -1px;
+        pointer-events: none;
+    }
+    .activeline{
+        vertical-align: middle;
+        width: 160px;
+    }
+
+    ul#socialmedia{
+        margin: 0; padding: 0;
+        position: fixed; bottom: 55px; left: 55px;
+        font-size: 10px; line-height: 10px;
+        font-family: 'Proxima Nova', Helvetica, Arial, Sans-Serif;
+        list-style: none;
+        z-index: 2000;
+    }
+    ul#socialmedia li{
+        display: inline;
+        margin: 0 15px 0 0;
+    }
+    ul#socialmedia li img{
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+    }
+    ul#socialmedia a{
+        padding-bottom: 2px;
+    }
+    .socialmedia-blacklink{ color: #000; text-decoration: none; border-bottom: 1px solid #000; }
+    .socialmedia-blacklink:hover{ color: #000; border: 0;}
+    .socialmedia-whitelink{ color: #fff; text-decoration: none; border-bottom: 1px solid #fff; }
+    .socialmedia-whitelink:hover{ color: #fff; border: 0;}
+
+
+/* =============================================================================
+   EACH PAGE SETTINGS
+   ========================================================================== */
+
+    .eachpage{
+
+    }
+    .pagepadding{
+        padding: 265px 55px 55px 55px;
+    }
+
+    .pagepadding-about{
+        padding: 50px 55px 55px 55px;
+    }
+
+    .pagepadding-work{
+        padding: 265px 55px 55px 55px;
+    }
+
+    .activetext-content{
+        display: none;
+    }
+
+    .page-color{
+        display: none;
+    }
+
+/* =============================================================================
+   PAGE: START
+   ========================================================================== */
+    #page-start p{
+        font-weight: bold; font-size: 25px;
+        display: none;
+    }
+
+    /* =============================================================================
+       PAGE: ABOUT
+       ========================================================================== */
+
+    #page-about p{
+        width: 1100px;
+        font-size: 45px; font-weight: bold;
+        margin-bottom: 0;
+    }
+
+/* =============================================================================
+   PAGE: WORK
+   ========================================================================== */
+
+    #workwrap{
+        padding-top: 100px;
+        overflow: auto;
+    }
+
+    .workcontainer{
+        margin-right: 5px; margin-bottom: 15px;
+        float: left;
+        width: 284px; height: 340px;
+        cursor: pointer;
+        overflow: hidden;
+        opacity: 0.7;
+
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+    }
+
+    .workcontainer img{
+        width: 100%;
+    }
+
+    .workcontainer xmp{
+        display: none;
+    }
+
+    .workcontainer:hover{
+        opacity: 1;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+    }
+
+    .workcontainer a{
+        color: #000; text-decoration: none;
+    }
+
+    .workcontainer-info{
+        margin-top: 12px;
+        font-size: 11px;
+    }
+
+    .workcontent{
+        visibility: hidden;
+    }
+
+/* =============================================================================
+    IF MINIMUM HEIGHT IS 5 PX
+   ========================================================================== */
+
+    @media only screen and (min-height: 5px) {
+        ul#menu{
+            padding: 0; margin: 160px 0 0 0;
+            list-style: none;
+            font-weight: bold; font-size: 35px; line-height: 35px;
+            color: #fff;
+        }
+        #bleed-logo{
+            width: 25px; height: 62px;
+            position: fixed; top: 15px; left: 15px;
+            cursor: pointer;
+            z-index: 95000; opacity: 1;
+
+            /* -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out; */
+        }
+    }
+
+    @media only screen and (min-height: 190px) {
+        ul#menu{
+            padding: 0; margin: 80px 0 0 -42px;
+            list-style: none;
+            font-weight: bold; font-size: 10px; line-height: 5px;
+            color: #fff;
+        }
+    }
+
+
+    @media only screen and (min-height: 600px) {
+        #bleed-logo{
+            width: 34px; height: 84px;
+            position: fixed; top: 55px; left: 55px;
+            cursor: pointer;
+            z-index: 95000; opacity: 1;
+
+            /* -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out; */
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+        #page-about p{
+            width: 850px;
+            font-size: 40px; font-weight: bold;
+            margin-bottom: 0;
+        }
+
+
+
+        #activetext{
+            top: 180px; left: 55px;
+            position: fixed;
+            z-index: 2000;
+        }
+        .activetext-page-start{
+            font-size: 50px; line-height: 60px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activetext-page-work{
+            font-size: 50px; line-height: 60px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activeline{
+            vertical-align: middle;
+            width: 90px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1500px) {
+
+        .activetext-page-start{
+            font-size: 270px; line-height: 80px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activetext-page-work{
+            font-size: 50px; line-height: 60px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activeline{
+            vertical-align: middle;
+            width: 90px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1499px) {
+
+        #activetext{
+            top: 165px; left: 55px;
+            position: fixed;
+            z-index: 2000;
+        }
+
+        #bleed-logo img{
+            width: 30px;
+        }
+
+
+        .activetext-page-start{
+            font-size: 70px; line-height: 80px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activetext-page-work{
+            font-size: 70px; line-height: 80px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activeline{
+            vertical-align: middle;
+            width: 90px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+        #activetext{
+            top: 150px; left: 55px;
+            position: fixed;
+            z-index: 2000;
+        }
+
+        #bleed-logo img{
+            width: 25px;
+        }
+
+
+        .activetext-page-start{
+            font-size: 50px; line-height: 60px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activetext-page-work{
+            font-size: 50px; line-height: 60px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+
+        .activeline{
+            vertical-align: middle;
+            width: 90px;
+        }
+
+        .eachpage{
+
+        }
+        .pagepadding{
+            padding: 100px 55px 55px 55px;
+        }
+
+        .activetext-content{
+            display: none;
+        }
+
+        .page-color{
+            display: none;
+        }
+
+        .pagepadding-work{
+            padding: 0px 0px 55px 0px;
+        }
+
+        #page-about p{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            width: auto;
+            /*font-size: 30px; font-weight: bold;*/
+            margin-bottom: 0;
+        }
+
+        .eachpage{
+
+        }
+
+        .activetext-content{
+            display: none;
+        }
+
+        .page-color{
+            display: none;
+        }
+
+        #workwrap{
+            padding-top: 0px;
+            overflow: auto;
+        }
+
+        .workcontainer{
+            margin-right: 0px; margin-bottom: 0px;
+            float: left; height: auto;
+            width: 25%;
+            cursor: pointer;
+            overflow: hidden;
+            opacity: 0.7;
+
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+        }
+
+        .workcontainer-info{
+            display: none;
+            margin-top: 12px;
+            font-size: 11px;
+        }
+
+        ul#socialmedia{
+            margin: 0; padding: 0;
+            position: fixed; bottom: 55px; left: 55px;
+            font-size: 10px; line-height: 10px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+            list-style: none;
+            z-index: 2000;
+        }
+
+
+
+        #page-start p{
+            margin-top: 70px;
+            font-weight: bold; font-size: 60px;
+            display: none;
+        }
+
+
+
+        .smbr{
+            display: block;
+        }
+
+        #projecttitle{
+            top: 150px; left: 55px;
+            position: fixed;
+            z-index: 6000;
+            font-size: 65px; line-height: 100px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+            display: inline;
+        }
+
+
+    }
+
+
+    @media only screen and (max-width: 799px) {
+
+        #bleed-logo{
+            top: 15px; left: 15px;
+            width: 25px;
+        }
+
+        #activetext{
+            top: 130px; left: 15px;
+            position: fixed;
+            z-index: 2000;
+        }
+
+        .eachpage{
+
+        }
+        .pagepadding{
+            padding: 100px 55px 55px 55px;
+        }
+
+        .activetext-content{
+            display: none;
+        }
+
+        .page-color{
+            display: none;
+        }
+
+        .pagepadding-work{
+            padding: 0px 0px 55px 0px;
+        }
+
+        #page-about p{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            width: auto;
+            /*font-size: 30px; font-weight: bold;*/
+            margin-bottom: 0;
+        }
+
+        .eachpage{
+
+        }
+
+        .activetext-content{
+            display: none;
+        }
+
+        .page-color{
+            display: none;
+        }
+
+        #workwrap{
+            padding-top: 0px;
+            overflow: auto;
+        }
+
+        .workcontainer{
+            margin-right: 0px; margin-bottom: 0px;
+            float: left; height: auto;
+            width: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            opacity: 0.7;
+
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+        }
+
+        .workcontainer-info{
+            display: none;
+            margin-top: 12px;
+            font-size: 11px;
+        }
+
+        ul#socialmedia{
+            margin: 0; padding: 0;
+            position: fixed; bottom: 55px; left: 55px;
+            font-size: 10px; line-height: 10px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+            list-style: none;
+            z-index: 2000;
+        }
+
+
+
+        #page-start p{
+            margin-top: 70px;
+            font-weight: bold; font-size: 60px;
+            display: none;
+        }
+
+
+
+        .smbr{
+            display: block;
+        }
+
+        #projecttitle{
+            top: 150px; left: 55px;
+            position: fixed;
+            z-index: 6000;
+            font-size: 65px; line-height: 100px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+            display: inline;
+        }
+
+    }
+
+    @media only screen and (max-width: 480px) {
+
+        ul#socialmedia{
+            margin: 0; padding: 0;
+            position: fixed; bottom: 15px; left: 15px;
+            font-size: 10px; line-height: 10px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+            list-style: none;
+            z-index: 2000;
+        }
+
+        #activetext{
+            top: 130px; left: 15px;
+            position: fixed;
+            z-index: 2000;
+        }
+        .activetext-page-start{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+        .activetext-page-work{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+        }
+
+
+        #page-about p{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            /*font-size: 15px; font-weight: bold;*/
+            margin-bottom: 0;
+        }
+        #page-about p:first-child{
+            margin-top: -20px;
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+        }
+
+        #workwrap{
+            padding-top: 100px;
+            overflow: auto;
+        }
+
+        .workcontainer{
+            margin-right: 0px; margin-bottom: 0px;
+            float: left; height: auto;
+            width: 25%;
+            cursor: pointer;
+            overflow: hidden;
+            opacity: 0.7;
+
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+        }
+
+        .workcontainer-info{
+            display: none;
+            margin-top: 12px;
+            font-size: 11px;
+        }
+
+        .pagepadding-work{
+            padding: 0;
+        }
+
+
+        #bleed-logo{
+            width: 25px; height: 62px;
+            position: fixed; top: 15px; left: 15px;
+            cursor: pointer;
+            z-index: 95000; opacity: 1;
+
+            /* -webkit-transition: all 0.15s ease-out;
+            -moz-transition: all 0.15s ease-out;
+            -o-transition: all 0.15s ease-out; */
+        }
+
+        .pagepadding{
+            padding: 80px 15px 55px 15px;
+        }
+        .pagepadding-work{
+            padding: 80px 0px 55px 0px;
+        }
+
+        #page-start p{
+            margin-top: 10px;
+            font-weight: bold; font-size: 25px;
+            display: none;
+        }
+
+
+        #moreinfo{
+            width: 30px; height: 29px;
+            position: fixed; left: 15px; bottom: 15px;
+            z-index: 6000; cursor: pointer;
+        }
+        #moreinfo img{
+            width: 100%;
+        }
+
+        #projecttitle{
+            top: 60px; left: 15px;
+            position: fixed;
+            z-index: 6000;
+            font-size: 30px; line-height: 100px;
+            font-weight: bold; letter-spacing: -1px;
+            white-space: nowrap; pointer-events: none;
+            display: inline;
+        }
+
+        #fullprojectinfo{
+            display: none;
+            position: fixed;
+            bottom: 60px; left: 20px;
+            z-index: 6000;
+            color: #000;
+        }
+
+        #fullprojectinfo-title{
+            display: inline-block;
+            font-size: 20px; line-height: 25px; font-weight: bold;
+            padding: 10px 15px 0px 15px; background: #fff;
+            color: #000;
+        }
+        #fullprojectinfo-tags{
+            display: inline-block;
+            font-size: 9px; line-height: 11px;
+            padding: 10px 15px 10px 15px; background: #fff;
+            color: #000;
+        }
+
+        #fullprojectinfo-content{
+            max-width: 280px;
+            color: #000;
+        }
+        #fullprojectinfo-content p{
+            margin-top: 6px;
+            margin-bottom: 0px;
+        }
+        #fullprojectinfo-content p{
+            display: inline-block;
+            font-size: 9px; line-height: 12px;
+            padding: 10px 15px 10px 15px; background: #fff;
+        }
+
+        #fullprojectinfo-arrow img{
+            width: 40px;
+        }
+
+    }
+
+    @media only screen and (max-width: 320px) {
+
+        #page-about p{
+            font-size: 60px; line-height: 70px;
+            font-weight: bold; letter-spacing: -1px;
+            width: 250px;
+            /*font-size: 15px; font-weight: bold;*/
+            margin-bottom: 0;
+        }
+        #page-about p:first-child{
+            margin-top: -20px;
+        }
+
+        #workwrap{
+            padding-top: 100px;
+            overflow: auto;
+        }
+
+        .workcontainer{
+            margin-right: 0px; margin-bottom: 0px;
+            float: left; height: auto;
+            width: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            opacity: 0.7;
+
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            -o-transition: all 0.4s ease-out;
+        }
+
+        .workcontainer-info{
+            display: none;
+            margin-top: 12px;
+            font-size: 11px;
+        }
+
+        .pagepadding-work{
+            padding: 0;
+        }
+
+        .smbr{
+            display: block;
+        }
+
+    }
+
+.bleed {
+    background-attachment: fixed;
+    background-position: center center;
+    height: 545px;
+    margin: 0;
+    padding-left: 52.7%;
+    padding-top: 120px;
+    background: url("img/shiftheader1.png") 70% -100px no-repeat;
+    background: -o-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.4) 50%), url("img/shiftheader1.png") no-repeat 50% 0; background-size: 700px, auto;
+    background: -webkit-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
+    background: -moz-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
+    background: -o-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
+    background: -ms-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
+}
+
+#bleed {
+    width:100%;
+    position:relative;
+}
+
+#bleed {
+    position: fixed;
+    top: 0px;
+    right: 1%;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    color: #fff;
+}
