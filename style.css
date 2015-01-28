@@ -200,6 +200,7 @@
         font-weight: bold; letter-spacing: -1px;
         white-space: nowrap; pointer-events: none;
         color: #FFFFFF;
+        z-index: -1;
     }
     .activetext-page-work{
         font-size: 90px; line-height: 100px;
