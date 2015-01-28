@@ -250,9 +250,8 @@
     }
     .socialmedia-blacklink{ color: #000; text-decoration: none; border-bottom: 2px solid #000; }
     .socialmedia-blacklink:hover{ color: #000; border: 0;}
-    .socialmedia-whitelink{ color: #fff; text-decoration: none; border-bottom: 2px solid #fff; }
-    .socialmedia-whitelink:hover{ color: #fff; border: 0;}
-
+    .socialmedia-whitelink{ color: #fff; text-decoration: none; border-bottom: 2px solid #fff; -webkit-transition: text-shadow .25s ease-in;   -moz-transition: text-shadow .25s ease-in;   -o-transition: text-shadow .25s ease-in;}
+    .socialmedia-whitelink:hover{ color: #fff; border: 0; border-bottom: 2px solid #fff; text-shadow: 0 0 5px #ffffff; -webkit-transition: text-shadow .25s ease-in;   -moz-transition: text-shadow .25s ease-in;   -o-transition: text-shadow .25s ease-in;}
 
 /* =============================================================================
    EACH PAGE SETTINGS
