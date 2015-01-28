@@ -233,7 +233,7 @@
 
     ul#socialmedia{
         margin: 0; padding: 0;
-        position: fixed; bottom: 55px; left: 55px;
+        position: fixed; bottom: 55px; right: 55px;
         font-size: 10px; line-height: 10px;
         font-family: 'Proxima Nova', Helvetica, Arial, Sans-Serif;
         list-style: none;
