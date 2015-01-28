@@ -301,18 +301,24 @@
        PAGE: ABOUT
        ========================================================================== */
        #page-about{
-        z-index: 50;
+          z-index: 50;
+          background-color: #000000;
        }
-    #page-about p{
-        width: 1100px;
-        font-size: 45px; font-weight: bold;
-        margin-bottom: 0;
-    }
+       #page-about p{
+          width: 1100px;
+          font-size: 45px; font-weight: bold;
+          margin-bottom: 0;
+          color: #FFFFFF;
+       }
 
 /* =============================================================================
    PAGE: WORK
    ========================================================================== */
 
+    #page-work {
+       background-color: #FFFFFF;
+    }
+    
     #workwrap{
         padding-top: 100px;
         overflow: auto;
