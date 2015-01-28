@@ -421,6 +421,10 @@
        PAGE: ABOUT
        ========================================================================== */
 
+    #page-about {
+       background-color: #000000;
+    }
+    
     #page-about p{
         width: 1100px;
         font-size: 50px; font-weight: bold;
@@ -431,6 +435,10 @@
    PAGE: WORK
    ========================================================================== */
 
+    #page-work {
+       background-color: #FFFFFF;
+    }
+    
     #workwrap{
         padding-top: 100px;
         overflow: auto;
