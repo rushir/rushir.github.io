@@ -193,7 +193,6 @@
     #activetext{
         top: 180px; left: 55px;
         position: fixed;
-        z-index: 2000;
     }
     .activetext-page-start{
         font-size: 90px; line-height: 100px;
