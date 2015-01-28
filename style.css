@@ -68,7 +68,7 @@
         width: 100%; height: 100%;
         overflow-x: hidden; overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-        background: #f4f4f4; background-image: url("img/stardust.png");
+        background: #FFFFFF;
     }
     #openproject-images{
         text-align: center;
