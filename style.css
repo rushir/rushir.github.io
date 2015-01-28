@@ -288,7 +288,7 @@
    ========================================================================== */
    #page-start {
     z-index: -3;
-    background: -webkit-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
+    background: url("img/shiftheader1.png") no-repeat 50% 0;
    }
    
    @media only screen
