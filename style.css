@@ -291,11 +291,17 @@
     background: -webkit-radial-gradient(65% 40%, circle, rgba(40,40,40,0) 0%, rgba(40,40,40,0.5) 50%), url("img/shiftheader1.png") no-repeat 50% 0;
    }
 
-
-
     #page-start p{
         font-weight: bold; font-size: 25px;
         display: none;
+    }
+    
+    #smtc {
+       color: #FFFFFF;
+    }
+    
+    #smbc {
+       color: #FFFFFF;
     }
 
     /* =============================================================================
