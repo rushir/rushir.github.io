@@ -287,7 +287,6 @@
    PAGE: START
    ========================================================================== */
    #page-start {
-    z-index: -3;
     background: url("img/shiftheader1.png") no-repeat 50% 0;
     background-attachment: fixed;
    }
