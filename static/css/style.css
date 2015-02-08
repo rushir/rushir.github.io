@@ -64,7 +64,7 @@ hr {
 .column-center{ display: inline-block; width: 33%; }
 
 .container {
-  width: 50%;
+  /*width: 50%;*/
   margin: 50px 0 50px 15%; }
   .container p, .container ul {
     font-size: 0.875rem; }
