@@ -59,13 +59,9 @@ hr {
   background: #5b5b61;
   opacity: 0.2; }
 
-.column-left{ float: left; width: 33%; }
-.column-right{ float: right; width: 33%; }
-.column-center{ display: inline-block; width: 33%; }
-
 .container {
   /*width: 50%;*/
-  margin: 50px 0 50px 15%; }
+  /*margin: 50px 0 50px 15%; }*/
   .container p, .container ul {
     font-size: 0.875rem; }
 
