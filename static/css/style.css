@@ -75,7 +75,7 @@ hr {
 .content ul li:before {
   content: "-";
   display: inline-block;
-  margin-right: 10px; }
+  /*margin-right: 10px; }*/
 .content h2 span {
   display: inline-block;
   margin-left: 5px;
