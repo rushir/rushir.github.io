@@ -254,7 +254,7 @@
     .socialmedia-whitelink:hover{ color: #fff; border-bottom: 2px solid #fff; opacity: 1; -webkit-transition: opacity .25s ease-in;   -moz-transition: opacity .25s ease-in;   -o-transition: opacity .25s ease-in;}
     #socialmedia {opacity: .75; -webkit-transition: opacity .25s ease-in;   -moz-transition: opacity .25s ease-in;   -o-transition: opacity .25s ease-in;}
     #socialmedia:hover {opacity: 1; -webkit-transition: opacity .25s ease-in;   -moz-transition: opacity .25s ease-in;   -o-transition: opacity .25s ease-in;}
-    
+
 /* =============================================================================
    EACH PAGE SETTINGS
    ========================================================================== */
@@ -289,7 +289,7 @@
     background: url("img/shiftheader1.png") no-repeat 50% 0;
     background-attachment: fixed;
    }
-   
+
    @media only screen
     and (min-width : 1824px) {
         #page-start {
@@ -324,7 +324,7 @@
     #page-work {
        background-color: #FFFFFF;
     }
-    
+
     #workwrap{
         padding-top: 100px;
         overflow: auto;
