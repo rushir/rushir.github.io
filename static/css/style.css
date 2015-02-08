@@ -59,6 +59,11 @@ hr {
   background: #5b5b61;
   opacity: 0.2; }
 
+.columns {
+  width: 50%;
+  .container p, .container ul {
+    font-size: 0.875rem; }
+
 .container {
   width: 50%;
   margin: 50px 0 50px 15%; }
