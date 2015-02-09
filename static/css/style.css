@@ -119,7 +119,7 @@ header[role="banner"] {
   header[role="banner"] p {
     font-size: 1.0625rem;
     opacity: 0.75; }
-  header[role="banner"] #holyshtballs {
+  header[role="banner"] #thebanner {
     position: absolute;
     top: -100px;
     right: 0;
