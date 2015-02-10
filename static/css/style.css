@@ -56,18 +56,15 @@ hr {
   display: block;
   width: 15%;
   height: 1px;
-  background: #5b5b61;
+  background: #73737c;
   opacity: 0.2; }
-
-.columns {
-
-}
 
 .container {
   width: 50%;
-  margin: 50px 0 50px 15%; }
+  margin: 125px 0 125px 15%; }
   .container p, .container ul {
-    font-size: 0.875rem; }
+    font-size: 0.9375rem;
+    font-weight: 300; }
 
 .content p, .content ul {
   margin-top: 12.5px; }
