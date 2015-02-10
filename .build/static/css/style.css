@@ -83,10 +83,10 @@ hr {
   line-height: 140%;
   letter-spacing: -0.05em;
   vertical-align: top;
-  border: 2px solid #06061d;
+  /*border: 2px solid #06061d;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px;*/
   transition: opacity 0.25s ease-out;
   cursor: help;
   opacity: 0.25; }
