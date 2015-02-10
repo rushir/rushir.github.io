@@ -41,15 +41,13 @@ body {
 
 a {
   cursor: pointer;
-  color: #5b5b61;
+  color: #73737c;
   white-space: nowrap;
   text-decoration: none;
-  border-bottom: 3px #000000;
-  opacity: 0.8;
+  border-bottom: 1px solid #73737c;
   transition: all 0.15s ease-out; }
   a:hover {
-    border-color: black;
-    border-bottom: 3px solid; }
+    border-color: #000; }
 
 .center {
   text-align: center; }
