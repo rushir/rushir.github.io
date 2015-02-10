@@ -44,7 +44,7 @@ a {
   color: #73737c;
   white-space: nowrap;
   text-decoration: none;
-  border-bottom: 1px solid #73737c;
+  border-bottom: 1px solid #b9c1c2;
   transition: all 0.15s ease-out; }
   a:hover {
     border-color: #000; }
