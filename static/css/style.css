@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximanova-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/proximanova-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/proximanova-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/proximanova-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog {
   display: block; }
 
