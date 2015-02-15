@@ -44,6 +44,10 @@ body > .header .links li:nth-child(2) a::after {
   text-align: center;
 }
 
+.header a {
+  color: #000;
+}
+
 .page h3{
   padding: .5em 0;
   margin-bottom: 2.75em;
@@ -54,13 +58,13 @@ body > .header .links li:nth-child(2) a::after {
   color: #000;
   font-size: 50px;
   font-weight: 700;
-  line-height: 45px;
+  line-height: 1px;
   margin-left: -2px;
 }
 
 .page h2 {
   color: #8f8e8e;
-  font-size: 15.4px;
+  font-size: 15px;
 }
 
 .page h2 a {
@@ -97,6 +101,12 @@ body > .header .links li:nth-child(2) a::after {
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
+}
+
+.page h6 {
+  font-size: 13px;
+  color: #b2b2b2;
+  text-align: right;
 }
 
 .page h5 {
