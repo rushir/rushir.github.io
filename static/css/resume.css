@@ -58,6 +58,7 @@ body > .header .links li:nth-child(2) a::after {
   color: #000;
   font-size: 50px;
   font-weight: 700;
+  text-decoration: underline;
   line-height: 1px;
   margin-left: -2px;
 }
