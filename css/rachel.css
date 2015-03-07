@@ -4105,7 +4105,7 @@ section.aboutme .fade {
   }
   section.about .pitch h1 {
     width: 100%;
-    padding-top: 24px;
+    padding-top: 50px;
     padding-left: 0;
     padding-right: 4%;
     font-size: 36px;
@@ -4325,7 +4325,7 @@ section.aboutme .fade {
     padding-top: 0;
     padding-bottom: 6px;
     padding-right: 0;
-    font-size: 24px;
+    font-size: 50px;
     line-height: 36px;
   }
   section.about .pitch p {
