@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 58px;
   line-height: 60px;
 }
 
@@ -153,7 +153,7 @@ em {
   -webkit-text-size-adjust: none;
 }
 h1 {
-  font-size: 48px;
+  font-size: 58px;
   line-height: 60px;
 }
 
@@ -1188,7 +1188,7 @@ header .tagline h1 {
 header .tagline h1:nth-of-type(1) {
   height: 84px;
   line-height: 84px;
-  font-size: 72px;
+  font-size: 102px;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
   -webkit-animation-delay: 1s;
@@ -1199,7 +1199,7 @@ header .tagline h1:nth-of-type(1) {
 header .tagline h1:nth-of-type(2) {
   height: 84px;
   line-height: 84px;
-  font-size: 72px;
+  font-size: 102px;
   -webkit-animation-duration: 0.65s;
   animation-duration: 0.65s;
   -webkit-animation-delay: 1.15s;
