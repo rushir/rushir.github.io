@@ -3798,7 +3798,6 @@ section.about .pitch h1 {
   padding-left: 0;
   padding-right: 0;
   line-height: 72px;
-  text-align: center !important;
 }
 section.about .pitch p {
   display: inline-block;
