@@ -3760,8 +3760,8 @@ section.work .bg {
 }
 section.about {
   height: 100%;
-  min-height: 1780px;
-  max-height: 1900px;
+  min-height: 780px;
+  max-height: 900px;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -3804,7 +3804,7 @@ section.about .pitch p {
   vertical-align: top;
   width: 47.5%;
   margin-top: 3em;
-  text-align: left;
+  text-align: center;
   font-size: 24px;
   line-height: 36px;
 }
@@ -3947,7 +3947,7 @@ section.aboutme .bg, section.aboutme .fade {
   bottom: 0;
   width: 50%;
   min-width: 640px;
-  text-align: right;
+  text-align: center;
 }
 section.aboutme .bg img, section.aboutme .fade img {
   width: 85%;
@@ -4109,7 +4109,7 @@ section.aboutme .fade {
     padding-right: 4%;
     font-size: 56px;
     line-height: 54px;
-    text-align: left;
+    text-align: center;
   }
   section.about .pitch p {
     display: block;
@@ -4305,7 +4305,7 @@ section.aboutme .fade {
 }
 @media screen and (max-width: 640px) {
   section.about {
-    max-height: 1930px;
+    max-height: 930px;
     padding-bottom: 0.75em;
     padding-left: 0;
     padding-right: 0;
