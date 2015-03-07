@@ -3760,8 +3760,8 @@ section.work .bg {
 }
 section.about {
   height: 100%;
-  min-height: 1780px;
-  max-height: 1900px;
+  min-height: 780px;
+  max-height: 900px;
   padding-left: 0;
   padding-right: 0;
   text-align: center;
@@ -4306,7 +4306,7 @@ section.aboutme .fade {
 }
 @media screen and (max-width: 640px) {
   section.about {
-    max-height: 1930px;
+    max-height: 930px;
     padding-bottom: 0.75em;
     padding-left: 0;
     padding-right: 0;
