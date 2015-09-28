@@ -48,7 +48,7 @@
 .icon:before {
     display: block;
     content: attr(data-icon);
-    font-family: "teehanlaxregular"
+    font-family: "Helvetica"
 }
 
 .icon span {
