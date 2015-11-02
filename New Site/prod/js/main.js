@@ -1,37 +1,3 @@
-//     .MMM.                                    MMMM.          
-//     MMMMM.                                  MMMMMM          
-//     MMMMM                                    MMMMM          
-//      MMMM                                    MMMMM          
-//     IMMMM                                     MMMMMM.       
-//  .MMMMMMMMMM                               MMMMMMMMMMM      
-//  MMMMMMMMMMMM                             MMMMMMMMMMMMM     
-//  MMMMMMMMMMMM                             MMMMMMMMMMMMM     
-//  MMMMMMMMMMMM.                           MMMMMMMMMMMMMMMM   
-// .MMMMMMMMMMMMM    $M        MM          .MMMMMMMMMMMMMMMM   
-//  MMMMMMMMMMMMM .MMMMM       MM          MMMMMMMMMMMMMMMMM   
-//   MMMMMMMMMMMMMMMMMMO     MMMMMM        MMMMMMMMMMMMMMMMM   
-//   MMMMMMMMMMMMMMMMM.        MM         ,MMMMMMMMMMMMMMMMM   
-//  =MMMMMMMMMMMMMMMM          MM        MMMMMMMMMMMMMMMMMMM   
-// .MMMMMMMMMMMMMMMM                     MMMMMMMMMMMMMMMMMMM   
-//  M: =MMMMMMMMMMM?                    .MMMMM: MMMMMMMM   M   
-//  M   M    MMMMMMM                     MMMMM  M.:MMMM=   M   
-//  M   M      MMMMM                     MMMMM. M  MMMM    M   
-//  M   M       MMMM                     MMMMM  M  MMMM.  .M   
-//  M   M      .MMMMM                    $MMMM  M  MMMM    M   
-//      M       MMMMM.                    MMMM  M  MMMM    M   
-//      M        MMMM                     MMMM  $  MMMM    M   
-//      M        MMMM                   MMMMMM    :MMMM        
-//      +        MMMMM                 .MMMM       MMMM        
-//               +MMMM                            MMMMM        
-//                 MMMMM                         MMMMM         
-//                  ~MMM                                       
-
-
-// TeehanLax-Labs - v0.1.0 - 10-11-2013
-// Copyright (c) 2013
-// ------------------------------------------------------------
-// Are you a developer? Come make awesome sh*t with our team
-// www.teehanlax.com/careers
 var tl = tl || {};
 tl.register = function(t, e) {
     var i = t.split(".");

@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 48px;
   line-height: 60px;
 }
 
@@ -153,7 +153,7 @@ em {
   -webkit-text-size-adjust: none;
 }
 h1 {
-  font-size: 68px;
+  font-size: 48px;
   line-height: 60px;
 }
 
@@ -1017,7 +1017,7 @@ section h1.title {
   max-width: 1440px;
   margin: 0 auto;
   box-shadow: 18px 0 rgba(0, 0, 0, 0.075), -18px 0 rgba(0, 0, 0, 0.075);
-  background: #E80C7A;
+  background: #c6cbcc;
 }
 
 body.fold header {
@@ -1053,7 +1053,7 @@ body.fold .arrowb {
   height: 0;
   border-left: 27px solid transparent;
   border-right: 27px solid transparent;
-  border-top: 27px solid #E80C7A;
+  border-top: 27px solid #c6cbcc;
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
   -webkit-transition-delay: 0s;
@@ -1188,7 +1188,7 @@ header .tagline h1 {
 header .tagline h1:nth-of-type(1) {
   height: 84px;
   line-height: 84px;
-  font-size: 102px;
+  font-size: 72px;
   -webkit-animation-duration: 0.8s;
   animation-duration: 0.8s;
   -webkit-animation-delay: 1s;
@@ -1199,7 +1199,7 @@ header .tagline h1:nth-of-type(1) {
 header .tagline h1:nth-of-type(2) {
   height: 84px;
   line-height: 84px;
-  font-size: 102px;
+  font-size: 72px;
   -webkit-animation-duration: 0.65s;
   animation-duration: 0.65s;
   -webkit-animation-delay: 1.15s;
@@ -1269,12 +1269,12 @@ header .taglinem h1 {
 header .taglinem h1:nth-of-type(1) {
   height: 78px;
   line-height: 84px;
-  font-size: 72px;
+  font-size: 62px;
 }
 header .taglinem h1:nth-of-type(2) {
   height: 78px;
   line-height: 78px;
-  font-size: 72px;
+  font-size: 62px;
 }
 header .taglinem h1:nth-of-type(3) {
   height: 90px;
@@ -1673,17 +1673,17 @@ header .speech.face span .bubble img {
   header .taglinem h1:nth-of-type(1) {
     height: 48px;
     line-height: 48px;
-    font-size: 62px;
+    font-size: 42px;
   }
   header .taglinem h1:nth-of-type(2) {
     height: 48px;
     line-height: 48px;
-    font-size: 62px;
+    font-size: 42px;
   }
   header .taglinem h1:nth-of-type(3) {
     height: 60px;
     line-height: 60px;
-    font-size: 68px;
+    font-size: 48px;
   }
 
   .push {
@@ -2257,7 +2257,7 @@ nav.bluebg li:nth-of-type(6):hover a:hover {
   height: 0;
   border-left: 27px solid transparent;
   border-right: 27px solid transparent;
-  border-top: 27px solid #E80C7A;
+  border-top: 27px solid #c6cbcc;
   margin: 0 auto;
   -webkit-animation-duration: 0.35s;
   animation-duration: 0.35s;
@@ -2278,7 +2278,7 @@ nav.bluebg li:nth-of-type(6):hover a:hover {
   height: 0;
   border-left: 24px solid transparent;
   border-right: 24px solid transparent;
-  border-top: 24px solid #E80C7A;
+  border-top: 24px solid white;
   margin: 0 auto;
 }
 
@@ -2291,7 +2291,7 @@ nav.bluebg li:nth-of-type(6):hover a:hover {
   height: 0;
   border-left: 24px solid transparent;
   border-right: 24px solid transparent;
-  border-top: 24px solid #E80C7A;
+  border-top: 24px solid #09b3c2;
   margin: 0 auto;
 }
 
@@ -3766,7 +3766,7 @@ section.about {
   padding-right: 0;
   text-align: center;
   color: white;
-  background: #682547;
+  background: rgba(9, 179, 194, 1);
 }
 section.about .head {
   position: relative;
@@ -3804,7 +3804,7 @@ section.about .pitch p {
   vertical-align: top;
   width: 47.5%;
   margin-top: 3em;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
   line-height: 36px;
 }
@@ -3833,7 +3833,7 @@ section.about .bfade {
 section.aboutme {
   padding-bottom: 10.5em;
   color: white;
-  background: #682547;
+  background: #09b3c2;
 }
 section.aboutme a {
   color: black;
@@ -3947,7 +3947,7 @@ section.aboutme .bg, section.aboutme .fade {
   bottom: 0;
   width: 50%;
   min-width: 640px;
-  text-align: center;
+  text-align: right;
 }
 section.aboutme .bg img, section.aboutme .fade img {
   width: 85%;
@@ -4092,7 +4092,7 @@ section.aboutme .fade {
     padding-bottom: 4.5em;
     padding-left: 0;
     padding-right: 0;
-    background: #682547;
+    background: #09b3c2;
   }
   section.about .pitch {
     position: relative;
@@ -4107,9 +4107,9 @@ section.aboutme .fade {
     padding-top: 24px;
     padding-left: 0;
     padding-right: 4%;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 54px;
-    text-align: center;
+    text-align: left;
   }
   section.about .pitch p {
     display: block;
@@ -4324,7 +4324,7 @@ section.aboutme .fade {
     padding-top: 0;
     padding-bottom: 6px;
     padding-right: 0;
-    font-size: 44px;
+    font-size: 24px;
     line-height: 36px;
   }
   section.about .pitch p {
@@ -4715,7 +4715,7 @@ body.fold.nowall .arrowb {
   height: 0;
   border-left: 24px solid transparent;
   border-right: 24px solid transparent;
-  border-top: 24px solid #E80C7A;
+  border-top: 24px solid #c6cbcc;
 }
 
 body.nowall header {
