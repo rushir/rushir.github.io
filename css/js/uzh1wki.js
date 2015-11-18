@@ -1,22 +1,4 @@
-/*
- * For font license information, see the CSS file loaded by this JavaScript.
- */
-if (!window.Typekit)
-    window.Typekit = {};
-window.Typekit.config = {
-    "a": "495043",
-    "f": "//use.typekit.net/c/6e2def/1w;bistro-script-web-1,2,Vqn:R:n4;gesta-1,2,ZD5:R:i4,ZD9:R:i7,ZQg:R:n4,ZD6:R:n5,ZQh:R:n7;jaf-facitweb-1,2,Y1d:R:n4,Y1l:R:n6,Y1n:R:n7/{format}{/extras*}?3bb2a6e53c9684ffdc9a9bf51b5b2a629d347ed6863d344d206715f66de45d8d9906061ceecc79916d8ec75a3db45b99788f0f69825305b94d6ed16af27e529211c439059be431ce5f09c3dbfed815c44d9e1ec1212685bec505b1665aaab706fabc65e711b5aa002c891ca5fb3faa86a41ff1366925b9fbfcf9fbfb818ea719661ccb",
-    "fi": [1699, 1700, 1701, 1703, 1704, 1721, 6037, 6043, 6045],
-    "fn": ["bistro-script-web-1", ["n4"], "gesta-1", ["i4", "i7", "n4", "n5", "n7"], "jaf-facitweb-1", ["n4", "n6", "n7"]],
-    "ht": "tk",
-    "k": "//use.typekit.net/{id}.js",
-    "kt": "uzh1wki",
-    "p": "//p.typekit.net/p.gif?s=1&k=uzh1wki&ht=tk&h={host}&f=1699.1700.1701.1703.1704.1721.6037.6043.6045&a=495043&_={_}",
-    "ps": 1,
-    "w": "uzh1wki"
-};
-/*{"k":"1.11.7","created":"2015-01-28 10:26:02 UTC"}*/
-;
+
 (function(window, document, undefined) {
     function aa(a, b, c) {
         return a.call.apply(a.bind, arguments)
