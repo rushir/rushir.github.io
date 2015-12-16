@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+	
+<head>
+<title>Teehan+Lax Labs - D.I.G.I.T.</title>	
+
+<meta charset="UTF-8">	
+	
+<link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" media="all">
+<link rel="stylesheet" href="/prod/css/main.css" media="all">
+<link rel="stylesheet" href="/libraries/css/labs-theme.css" media="all">		
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="/libraries/js/rainbow-custom.min.js"></script>
+<script src="/prod/js/main.js"></script>
+
+<link rel="stylesheet" href="/libraries/css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="/libraries/js/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script type="text/javascript" src="/libraries/js/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<script src="/libraries/js/hammer.js"></script>
+<script src="/libraries/js/jquery.hammer.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+			helpers : {
+				media : {}
+			}
+		});
+
+		var firstGallery = new tl.ui.Gallery($('#first-gallery'));
+	});
+</script>
+</head>
+
+<body class="project-details">
+	
+	<div id="fb-root"></div>
+
+
+
+<nav id="main-nav">
+	<div id="top-bar">
+		<div class="site-width">
+			<div class="copy-width">
+				<div class="tl-nav">
+					<a href="http://www.teehanlax.com" target="_blank"><span class="icon" data-icon="A"></span><span class="text">Visit TeehanLax.com</span></a>
+				</div>
+				<div class="labs-nav">
+					<a href="/"><span class="icon" data-icon="P"></span></a>
+					<span class="text">
+						<a href="/projects">Projects</a>
+						<a href="/about">About</a>
+					</span>
+				</div>
+				<div class="social">
+					<a href="https://twitter.com/tllabs" target="_blank"><span class="icon" data-icon="I"></span></a>
+					<a href="https://github.com/TeehanLax" target="_blank"><span class="icon" data-icon="M"></span></a>
+					<a href="https://plus.google.com/116879430658305967024/" target="_blank" rel="publisher"><span class="icon" data-icon="J"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="hero-header">
+		<div class="logo">
+			<a href="/">
+			<span class="icon" data-icon="P"></span>
+			<div class="name-tag">
+				<span class="name">+labs</span>
+				<span class="tagline">A Division of Teehan+Lax</span>
+			</div>
+			</a>
+		</div>
+		
+		<div class="links">
+			<a href="/projects">Projects</a>
+			<span>•</span>
+			<a href="/about">About</a>
+		</div>
+	</div>
+</nav>	
+	<div class="cover" style="background-image: url(/resources/img/projects/digit/cover.jpg);">
+		<h1>D.I.G.I.T.</h1>
+		<!--<img class="bodyimg" src="/resources/img/projects/digit/logo.png" alt=""><br>-->
+		<a href="http://vimeo.com/79332227" class="button fancybox"><span class="icon" data-icon="Q"></span>Watch the video</a>
+	</div>
+	
+	<div class="site-width">
+		<div class="copy-width">
+			<blockquote>Disclaimer: This post was written from the perspective of Peter Nitsch. There were many other talented individuals who were involved in the creation of D.I.G.I.T. </blockquote>
+			<p></p>
+
+			<p>
+				What do you suppose you'd look like to your digital alarm clock? It's a silly question, but it also makes you think about the nature of digital devices and your relationship to them. D.I.G.I.T. is a fun interactive display, built with open hardware and platforms, that playfully explores the answer. It draws a segmented camera feed in real-time as though it were a mirror, and channels the long-standing tradition of rendering graphics within the constraints of simple computing paradigms. This project was personal for me - not only in its origin and motivation, but also in a lesson in persistance that emerged during the course of its construction.  </p>
+
+			<p>
+				<div class="embed-container">
+					<iframe src="http://player.vimeo.com/video/79332227?title=0&amp;byline=0&amp;portrait=0" width="809" height="455" frameborder="0"></iframe>
+				</div>
+			</p>
+
+			<h3>The Genesis</h3>
+
+			<p>The idea for D.I.G.I.T. had been brewing for a couple of years. I have a certain fascination with classic image segmentation routines, particularly renderings constructed from text. You could call me a text-mode nut. It’s a theme that has inspired some of <a href="http://labs.teehanlax.com/project/painting-with-a-digital-brush">our previous projects</a>. Naturally, I’ve always desired experimenting with <a href="http://en.wikipedia.org/wiki/Seven-segment_display">seven-segment displays</a> - classic electronic components found in millions (if not billions) of appliances. Though they are still reliant on light, these displays are inherently more physical than traditional computer monitors in that they are built in the form of alpha-numeric characters. A grid of seven-segment displays could be a pure monochrome text-mode terminal - a goal I thought was achievable with open hardware. </p>
+
+			<p>Fortunately, there are numerous <a href="https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display">great solutions</a> for programming seven-segment displays. Initial tests proved the viability of a grid very quickly. The design was straightforward - each display was controlled by its own microcontroller, and each of those was sent commands from a central microprocessor. I presented the concept internally and it was, to my surprise, well received. I thought the idea would be considered another excuse to play with <a href="http://en.wikipedia.org/wiki/ASCII_art">ASCII Art</a> routines - which of course it was. Instead, the concept resonated with other staffers and the decision was made to build a display.</p>
+
+			<img class="bodyimg" src="/resources/img/projects/digit/screen_1.jpg" alt=""><p></p>
+
+			<h3>The Making</h3>
+
+			<p>The display itself is built from 48 individual seven-segment panels (4 digits each). That’s 192 digits, for a grand total of 1344 individual LED’s (not including decimal points). Each panel is controlled with a single <a href="http://arduino.cc/">Arduino</a> microcontroller and receives commands from an <a href="http://www.openframeworks.cc/">openFrameworks</a> application running on a <a href="http://www.raspberrypi.org/">Raspberry Pi</a>. The application segments a camera feed and flips LED’s on-off depending on it seeing a difference between a background frame (taken when nobody is in front) and the current frame. The unit is powered with a single 5V 4A wall plug. There is no other cabling. Visible controls were added to the prototype unit for easy debugging (mode switching and threshold adjustment).</p>
+
+
+			
+			<img class="bodyimg" src="/resources/img/projects/digit/06.jpg" alt=""><p></p>
+
+			<img class="bodyimg" src="/resources/img/projects/digit/07.jpg" alt=""><p></p>
+
+			<blockquote>
+			"What was the point? It had been done. Except that it had not been done by us. That was an important distinction."
+			</blockquote><p></p>
+
+			<p>When you spend your days working on experimental projects, you come to expect a series of failures, and generally a bumpy road. It turns out that building a seven-segment grid is not that type of project. We had very few surprises, and were generally building against our original designs. It was a joy. In fact, it went so smoothly that I started wondering how something like this hasn’t been done many times in the past. That uneasy feeling turned out to be warranted - we discovered <a href="http://www.skot9000.com/digitgrid/">DigitGrid</a> by <a href="http://www.skot9000.com/about/">Skot Croshere</a>, an impressive and beautifully engineered 512 panel seven-segment grid.</p>
+
+			<p>I won’t lie, it was a humbling moment. Learning that you’re not the first to explore a concept, especially in such an impressive project like DigitGrid, has a way of knocking the wind out of your sails. I wrestled with halting development of our display. What was the point? It had been done. Except that it had not been done by us. That was an important distinction. We decided to push forward with the idea that we could bring something new to the table, that we could evolve the concept of a digit display from simple canvas to real-time mirror.</p>
+
+			<img class="bodyimg" src="/resources/img/projects/digit/08.jpg" alt=""><p></p>
+			<img class="bodyimg" src="/resources/img/projects/digit/01.jpg" alt=""><p></p>
+			<img class="bodyimg" src="/resources/img/projects/digit/05.jpg" alt=""><p></p>
+
+			<p>
+				<div class="embed-container">
+					<iframe src="http://player.vimeo.com/video/77597313?title=0&amp;byline=0&amp;portrait=0" width="809" height="455" frameborder="0"></iframe>
+				</div>
+			</p>
+
+			<p>Focusing on the software became my top priority. I knew we had to build beautiful hardware (which Andrew and Derek did a masterful job at), but it would be the speed and fluidity of our motion graphics and camera feed that would set this display apart. The results were stunning - close to 30 frames-per-second on the video feed. I couldn't have been happier. Animations were mesmerizing and, most importantly, the display was fun to interact with. We quickly began sketching ideas for installations in gallery settings that housed multiple displays close to each other. We want to scale D.I.G.I.T. to a larger and more compelling experience. The next version will be thinner, faster, and sleeker. </p>
+
+			<img class="bodyimg" src="/resources/img/projects/digit/screen_2.jpg" alt=""><p></p>
+			<img class="bodyimg" src="/resources/img/projects/digit/gallery.jpg" alt=""><p></p>
+
+
+			<p>This project is different for us than previous ones. It is not a story of technical complexity, but of perseverance. We learned that being first is important, but should not be the only factor when determining the viability of a project. If you have an evolved approach to a preexisting concept, you are likely doing something original and the results have a good chance of being meaningful. </p>
+
+			
+			<p>I’m very proud of D.I.G.I.T. and the team that built it. It is simple, fun, and relatable. A wave of the hand transports the viewer into a digital world. That's been the aim from the start. Our goal now is to get as many people in front of it as possible - to experience the things we love making.</p>
+
+			<img class="bodyimg" src="/resources/img/projects/digit/logo.png" alt=""><p></p>
+			
+			<div class="sharing-tools">
+								
+				<div class="network">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-text="Teehan+Lax Labs D.I.G.I.T. A digital mirror display." data-url="http://labs.teehanlax.com/project/digit" data-via="teehanlax">Tweet</a>
+				</div>
+				
+				<div class="network">
+					<div class="fb-like" data-href="http://labs.teehanlax.com/project/digit" data-send="false" data-layout="button_count" data-width="110" data-show-faces="false" data-font="arial"></div>
+				</div>
+
+				<div class="network">
+					<div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300"></div>
+					<script type="text/javascript">
+					  (function() {
+					    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					    po.src = 'https://apis.google.com/js/plusone.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+					  })();
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	// Relead Tracking
+	var releadTrackingId = '6ee642c329c438a4555f21e4c01c65ed';
+
+	(function() {
+		var rl = document.createElement('script');
+		rl.type = 'text/javascript';
+		rl.async = true;
+		rl.src = (document.location.protocol == 'https:' ? 'https://' : 'http://') + 'relead.s3.amazonaws.com/tracking.relead.js';
+		var e = document.getElementsByTagName('script')[0];
+		e.parentNode.insertBefore(rl, e);
+	})();
+</script>	
+</body>
+</html>
