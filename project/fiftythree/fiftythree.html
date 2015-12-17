@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	
+<head>
+<title>Bumpin'</title>	
+
+<meta charset="UTF-8">	
+	
+<link rel="stylesheet" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" media="all">
+<link rel="stylesheet" href="/prod/css/main.css" media="all">
+<link rel="stylesheet" href="/libraries/css/labs-theme.css" media="all">		
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="/libraries/js/rainbow-custom.min.js"></script>
+<script src="/prod/js/main.js"></script>
+
+<link rel="stylesheet" href="/libraries/css/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="/libraries/js/jquery.fancybox.pack.js?v=2.1.4"></script>
+<script type="text/javascript" src="/libraries/js/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<script src="/libraries/js/hammer.js"></script>
+<script src="/libraries/js/jquery.hammer.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+			helpers : {
+				media : {}
+			}
+		});
+
+		var firstGallery = new tl.ui.Gallery($('#first-gallery'));
+	});
+</script>
+</head>
+
+<body class="project-details">
+	
+	<div id="fb-root"></div>
+
+	<div class="hero-header">
+		<div class="logo">
+			<div class="name-tag">
+				<span class="name">rushir.</span>
+				<spans class="tagline">product designer</span>
+			</div>
+		</div>
+		
+		<div class="links">
+			<a href="/portfolio.html">Portfolio</a>
+			<span>•</span>
+			<a href="/about.html" class="active">About</a>
+			<span>•</span>
+			<a href="/resume.html">Résumé</a>
+		</div>
+	</div>
+
+	<div class="cover" style="background-image: url(/resources/img/projects/fiftythree/cover.jpg);">
+		<h1>FIFTYTHREE</h1>
+		<!--<img class="bodyimg" src="/resources/img/projects/digit/logo.png" alt=""><br>-->
+	</div>
+	
+	<div class="site-width">
+		<div class="copy-width">
+			<p>
+			Music players are ubiquitous in the app stores of all smartphones. However, most users stick with the stock music apps that come with their phone unless they subscribe to a service such as Spotify or Pandora. This leaves a lot of people using the default "Music" app provided by Apple on iPhones. In iOS 9 the music app came with a completely new design, which left many users frustrated. Articles like <a href="http://lifehacker.com/how-to-make-sense-of-the-confusing-new-apple-music-app-1714913134">How to Make Sense of the Confusing New Apple Music App</a> starting popping up, hoping to ease the frustration of new users.
+			</p>
+			
+			<blockquote>
+			"If it ain't broke don't fix it. Although now it is broken so please fix it."
+			</blockquote><p></p>
+			
+			<p>
+			I wanted to solve this problem becasue the stock music app is what I use. I myself had a few frustrations. Most notably, an easier navigation system and a better album view. I'm not a huge fan of the way Apple has broken the "Library" section in to two seperate sections, "Recently Added" and the View switcher which brings up a menu allowing you to choose how you'd like to view your music "Artists, Albums, Songs, Genres, Composers, Only Downloaded Music". After many trials I came up with useable sizings of album art, readable text sizes and an overall better layout as far as usability is concerned. 
+			</p>
+
+			<h3>The Issues</h3>
+
+			<img class="bodyimg" src="/resources/img/projects/bumpin/screen03.jpg" alt=""><p></p>
+			<img class="bodyimg" src="/resources/img/projects/bumpin/screen04.jpg" alt=""><p></p>
+
+			<p>While minor, these quirks have slowly become annoying, especially when you listen to a lot of music and don't have it organizing into neat playlists. Constantly tapping on the small arrow to display all the tracks in the album is irritating, and a much better solution is available.</p>
+
+			<h3>The Making</h3>
+
+			<p>The process to create a useable UI was a lot of trial and error. Tackling the problem of the album view was the most challengeing as I had to figure out which album size was actually tappable, and which font size would actually be readable on the device.</p>
+			
+			<img class="bodyimg" src="/resources/img/projects/bumpin/screen01.jpg" alt=""><p></p>
+			<p>I went from an intial three albums per row which Apple currently uses in their Music app down to two in order to create a more useable view. An important thing to note here is that the purpose of an album view is to look at the albums... If the covers are so small that you have a hard time looking at the detail, then the view is wasted.</p>
+			<img class="bodyimg" src="/resources/img/projects/bumpin/screen02.jpg" alt=""><p></p>
+			<p>I then noted the way in which that screen would be used in relation to the user's expereince. Things like how the user would control the place in a song and what would happen when the user tapped on an album cover were also noted.</p>
+			
+			<img class="bodyimg" src="/resources/img/projects/bumpin/screen05.jpg" alt=""><p></p>
+
+			<p>I also showed what the view would be when a song was being played and other songs in the album wanted to be seen. I tried to make it as simple and straightforward for the user. A simple swipe up reveals the track listing with the ability to scrub, pause/play, and return to the "all album view".</p>
+
+			<p>To me this seems like a much better solution because it removes the compplicated variety of screens that the current app has and breaks it down into just two: the "all album view" where you are able to pick which album (or playlist) you want to hear, and the actual "currently playing" view.
+
+			<p>This project was really fun for me becasue I was able to actually document the progress that I was making and was working on designing something I myself would actually want to use. I think that always makes the end product better. Though this project isn't anywhere near completeion, it's nice to step back and see where the vision came from and understand where it is going.</p>
+
+			<p>Incidentally, someone actually made a Music app that takes cues from the stock Apple one but simplifies the views and adds gestures to switch between songs etc. Check it out <a href="https://itunes.apple.com/ca/app/cesium-streamlined-music-player/id924491991?mt=8">here.</a></p>			
+
+	</div>
+		
+</body>
+</html>
