@@ -2,7 +2,7 @@
 <html lang="en">
 	
 <head>
-<title>Bumpin'</title>	
+<title>FiftyThree</title>	
 
 <meta charset="UTF-8">	
 	
@@ -63,42 +63,36 @@
 	<div class="site-width">
 		<div class="copy-width">
 			<p>
-			Music players are ubiquitous in the app stores of all smartphones. However, most users stick with the stock music apps that come with their phone unless they subscribe to a service such as Spotify or Pandora. This leaves a lot of people using the default "Music" app provided by Apple on iPhones. In iOS 9 the music app came with a completely new design, which left many users frustrated. Articles like <a href="http://lifehacker.com/how-to-make-sense-of-the-confusing-new-apple-music-app-1714913134">How to Make Sense of the Confusing New Apple Music App</a> starting popping up, hoping to ease the frustration of new users.
+			The summer of 2014, before the start of my senior year in high school, I had the wonderful oppurtunity to visit the Seattle headquarters of <a href="http://www.fiftythree.com">FiftyThree</a> and do a job shadow over the course of one week.
 			</p>
-			
-			<blockquote>
-			"If it ain't broke don't fix it. Although now it is broken so please fix it."
-			</blockquote><p></p>
 			
 			<p>
-			I wanted to solve this problem becasue the stock music app is what I use. I myself had a few frustrations. Most notably, an easier navigation system and a better album view. I'm not a huge fan of the way Apple has broken the "Library" section in to two seperate sections, "Recently Added" and the View switcher which brings up a menu allowing you to choose how you'd like to view your music "Artists, Albums, Songs, Genres, Composers, Only Downloaded Music". After many trials I came up with useable sizings of album art, readable text sizes and an overall better layout as far as usability is concerned. 
+			I had been applying to as many internship programs as I could but unfortunatley I had started to late. However when one of FiftyThree's engineers started following me on Twitter and said they liked my work, the least I could do was ask "if not an internship, how about a job shadow?". And so it happened. Over the next several weeks we worked out schedules and had a Google Hangout or two just to get a feel of what the environment would be like and who I'd be working with. 
 			</p>
 
-			<h3>The Issues</h3>
+			<p>
+			The following is a documentation of what I did every day along with things I learned.
+			</p>
 
-			<img class="bodyimg" src="/resources/img/projects/bumpin/screen03.jpg" alt=""><p></p>
-			<img class="bodyimg" src="/resources/img/projects/bumpin/screen04.jpg" alt=""><p></p>
+			<h3>Day 1</h3>
 
-			<p>While minor, these quirks have slowly become annoying, especially when you listen to a lot of music and don't have it organizing into neat playlists. Constantly tapping on the small arrow to display all the tracks in the album is irritating, and a much better solution is available.</p>
+			<p>The first day was mainly about getting set up with all the tools I'd be using, getting the various libraries and code bases onto my computer, and just getting used to the office. Learning to use Git was highly encouraged and was one of the big things I accomplished while I was here. I was also introduced to a variety of other tools like <a href="http://hipchat.com">HipChat</a>, <a href="http://neo4j.com">neo4j</a>, and of course Sublime Text and Sketch. A lot of my work ended up being centered around creating a styleguide so I also worked with <a href="https://github.com/tj/nib">nib</a> and <a href="https://github.com/kneath/kss">kss</a>.</p>
 
-			<h3>The Making</h3>
+			<h3>Day 2</h3>
 
-			<p>The process to create a useable UI was a lot of trial and error. Tackling the problem of the album view was the most challengeing as I had to figure out which album size was actually tappable, and which font size would actually be readable on the device.</p>
+			<p>The second day started off with a meeting with one of the team's in New York that was working on the same project we were, the frontend of <a href="https://mix.fiftythree.com">Mix</a>. Throughout the day I made myself more familiar with the codebase and the goals we were trying to accomplish. It was here that I decided that maybe I shouldn't be delving into the development so much, and should do something more design related. Daniel suggested I work on the styleguide for Mix, so he helped me get setup with that and I was good to go!</p>
 			
-			<img class="bodyimg" src="/resources/img/projects/bumpin/screen01.jpg" alt=""><p></p>
-			<p>I went from an intial three albums per row which Apple currently uses in their Music app down to two in order to create a more useable view. An important thing to note here is that the purpose of an album view is to look at the albums... If the covers are so small that you have a hard time looking at the detail, then the view is wasted.</p>
-			<img class="bodyimg" src="/resources/img/projects/bumpin/screen02.jpg" alt=""><p></p>
-			<p>I then noted the way in which that screen would be used in relation to the user's expereince. Things like how the user would control the place in a song and what would happen when the user tapped on an album cover were also noted.</p>
-			
-			<img class="bodyimg" src="/resources/img/projects/bumpin/screen05.jpg" alt=""><p></p>
+			<img class="bodyimg" src="/resources/img/projects/fiftythree/catan.jpg" alt=""><p></p>
 
-			<p>I also showed what the view would be when a song was being played and other songs in the album wanted to be seen. I tried to make it as simple and straightforward for the user. A simple swipe up reveals the track listing with the ability to scrub, pause/play, and return to the "all album view".</p>
+			<h3>Day 3</h3>
 
-			<p>To me this seems like a much better solution because it removes the compplicated variety of screens that the current app has and breaks it down into just two: the "all album view" where you are able to pick which album (or playlist) you want to hear, and the actual "currently playing" view.
+			<h3>Day 4</h3>
 
-			<p>This project was really fun for me becasue I was able to actually document the progress that I was making and was working on designing something I myself would actually want to use. I think that always makes the end product better. Though this project isn't anywhere near completeion, it's nice to step back and see where the vision came from and understand where it is going.</p>
+			<h3>Day 5</h3>	
+			<p>The last day was about wrapping up for the week. It consisted of a big meeting between the entire team in the Seattle office and the entire team in the New York office. Everyone was given a chance to present what they had been working on that week (even me! though I didn't take the oppurutnity). This was especially cool because I was introduced to the other cofounders on the east coast and see people like <a href="https://twitter.com/kjchun">KJ</a> who had helped me on my path.</p>
 
-			<p>Incidentally, someone actually made a Music app that takes cues from the stock Apple one but simplifies the views and adds gestures to switch between songs etc. Check it out <a href="https://itunes.apple.com/ca/app/cesium-streamlined-music-player/id924491991?mt=8">here.</a></p>			
+			<h3>Shout Outs</h3>
+			<p>I want to give a shout out to <a href="https://twitter.com/gasi">Daniel Gasienica</a> who was my mentor for the duration I was there. He's the one that helped me get all setup and explained really complex algorithm related questions in a way that I could understand. I also want to give a huge shout out to <a href="https://twitter.com/johnikeda">John Ikeda</a> who helped me understand the differences in the various forms of design, from industrial, to product, to visual, and how I should go about finding my passion. I also want to mention <a href="https://twitter.com/jon_creates">Jon Harris</a>, one of the co-founders of FiftyThree, who helped me understand what goes into a good design portfolio and how to tell the narrative of the design process. And lastly I also want to give a shout out to <a href="https://twitter.com/tfeener">Tara Feener</a> for first noticing me and giving me that follow that started the whole ball rolling. If it weren't for her none of this would've been able to happen.</p> 
 
 	</div>
 		
