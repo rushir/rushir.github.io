@@ -1,3 +1,14 @@
+::selection {
+  background: #FFFF00;
+  color: rgba(0,0,0,.9);
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #FFFF00;
+  color: rgba(0,0,0,.9);
+  text-shadow: none;
+}
+
 .column {
     float: left
 }
@@ -283,6 +294,7 @@ html {
 
 body {
     background: #1b1b1b;
+    /*background: #06091a;*/
     color: #aaa;
     min-height: 100%;
     padding-bottom: 100px
@@ -472,7 +484,13 @@ body {
     color: #fff;
     letter-spacing: -0.05em
 }
-
+.hero-header .logo .name-tag .period {
+    font-size: 70px;
+    line-height: 66px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.05em
+}
 .hero-header .logo .name-tag .tagline {
     display: block;
     font-size: 15px;
@@ -504,7 +522,8 @@ body {
 
 .hero-header .links a.active {
     color: #fff;
-    border-bottom: 2px solid #4cbd99;
+    /*border-bottom: 2px solid #4cbd99;*/
+    border-bottom: 2px solid #fff;
     padding-bottom: 3px
 }
 
