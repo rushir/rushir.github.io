@@ -488,7 +488,7 @@ body {
     font-size: 70px;
     line-height: 66px;
     font-weight: 700;
-    color: #FFFF00;
+    color: #fff;
     letter-spacing: -0.05em
 }
 .hero-header .logo .name-tag .tagline {
@@ -523,7 +523,7 @@ body {
 .hero-header .links a.active {
     color: #fff;
     /*border-bottom: 2px solid #4cbd99;*/
-    border-bottom: 2px solid #FFFF00;
+    border-bottom: 2px solid #fff;
     padding-bottom: 3px
 }
 
