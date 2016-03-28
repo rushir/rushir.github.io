@@ -10,7 +10,7 @@
 
 body {
 	font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
-    background-color: #06091a;    
+    background-color: #06091a;
     -webkit-animation: pulse 40s infinite alternate;
 	color: #fff;
 }
@@ -42,6 +42,21 @@ h2 a:link,
 h2 a:visited,
 h2 a:active,
 h2 a:hover {
+	border-bottom: 2px solid #ccc;
+}
+
+h3 {
+	margin-top: 8px;
+	font-size: 15px;
+	font-weight: 100;
+	line-height: 22px;
+	max-width: 400px;
+}
+
+h3 a:link,
+h3 a:visited,
+h3 a:active,
+h3 a:hover {
 	border-bottom: 2px solid #ccc;
 }
 
