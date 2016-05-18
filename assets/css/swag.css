@@ -74,8 +74,10 @@
     border: none;
     }
   .hero-img {
-    background: url('https://media.giphy.com/media/wXY85R23F60RG/giphy.gif');
-    /*background: url('http://goo.gl/2Qw10S');*/
+    background: url('http://i.giphy.com/3xz2Bum7V47FgVROmY.gif');
+    /*background: url('http://goo.gl/2Qw10S');
+
+    https://media.giphy.com/media/wXY85R23F60RG/giphy.gif*/
     background-size: cover;
     margin: 4vw;
   }
