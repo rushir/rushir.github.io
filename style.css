@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 30px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+h1, h2, h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #1800ff;
+    margin: 0;
+}
+.ttc {
+    text-transform: uppercase;
+}
+.tc {
+    text-align: center;
+}
+a, a:visited {
+    color: #1800ff;
+}
+
+.dark {
+    color: black;
+    background: #fff;
+}
+
+.dark h1 {
+    font-size: 52px;
+    line-height: 52px;
+    margin-bottom: 22px;
+}
+.dark mark {
+    margin-top: 52px;
+}
+.dark .cta {
+/*    margin-top: 40px; */
+}
+.dark .cta a {
+    color: #1800ff;
+}
+
+h1 {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+h1 a {
+    font-size: 16px;
+    text-decoration: none;
+}
+h1 a,
+h1 a:visited {
+    color: rgb(78, 65, 118);
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 52px;
+    margin: 0;
+    color:rgb(50, 50, 50);
+}
+
+h3 {
+    margin: 2em 0 0.5em 0;
+    color: #1800ff;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+mark {
+    display: inline;
+    padding: 5px 10px;
+    background-color: #1800ff;
+    color: #fff;
+}
+
+mark a, a:visited {
+    color: #fff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid  rgb(240, 240, 240);
+    margin-top: 2em;
+}
+
+
+@media screen and (min-width: 48em) {
+    body {
+        line-height: 36px;
+        font-size: 22px;
+        margin: 5em auto;
+        max-width: 760px;
+    }
+    .content h1 a {
+        font-size: 18px;
+    }
+    .content h2 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    .content h3 {
+        font-size: 24px;
+        margin: 4em 0 .5em 0;
+    }
+    .content hr {
+        margin-top: 4em;
+    }
+    .dark h1 {
+        font-size: 82px;
+        line-height: 86px;
+        margin-bottom: 32px;
+    }
+    .dark mark {
+        margin-top: 52px;
+    }
+    .dark .cta {
+      /*  margin-top: 60px;*/
+    }
+}
